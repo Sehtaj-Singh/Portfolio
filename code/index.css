@@ -125,7 +125,6 @@
   transform: scale(1.2);
 }
 
-
 /* ---------------Modal----------------- */
 .menu-btn {
   background: transparent;
@@ -191,8 +190,8 @@ body.no-scroll {
   right: 0;
 }
 
-/* --------------about--------------- */
-#about {
+/* --------------service--------------- */
+#service {
   width: 100vw;
   background-color: #ffffff;
 }
@@ -205,7 +204,7 @@ body.no-scroll {
 }
 .heading-ribbon {
   width: 20vw;
-  background-color: #4c4742;
+  background-color: #646d52;
   height: 5vh;
   clip-path: polygon(100% 0, 60% 50%, 80% 100%, 0 100%, 20% 0);
 }
@@ -215,7 +214,7 @@ body.no-scroll {
   margin-right: -5vw;
   margin-top: -1vh;
   width: 20vw;
-  background-color: #4c4742;
+  background-color: #646d52;
   height: 5vh;
   clip-path: polygon(100% 0, 60% 50%, 75% 100%, 0 100%, 25% 0);
 }
@@ -226,7 +225,7 @@ body.no-scroll {
 #ribbon-right {
   margin-left: -5vw;
   width: 20vw;
-  background-color: #4c4742;
+  background-color: #646d52;
   height: 5vh;
   clip-path: polygon(100% 0, 60% 50%, 75% 100%, 0 100%, 25% 0);
   position: relative;
@@ -237,7 +236,7 @@ body.no-scroll {
   font-family: "Righteous", sans-serif;
   font-weight: 800;
   font-size: 3vh;
-  background-color: #4c4742;
+  background-color: #646d52ea;
   color: #fff9f1;
   position: relative;
   clip-path: polygon(8% 0, 100% 0, 92% 100%, 0% 100%);
@@ -295,4 +294,44 @@ body.no-scroll {
   aspect-ratio: 4608/2602;
 
   margin-top: 4vh;
+}
+
+/* 
+------------- about -------------- */
+#about-front {
+  display: flex;
+}
+.front-left {
+  width: 45.5vw;
+  margin-left: 3vw;
+  margin-right: 3vw;
+}
+.front-right {
+  width: 45.5vw;
+}
+
+.front-left img {
+  width: 100%;
+}
+
+.front-right img {
+  width: 100%;
+}
+
+#about-back {
+  width: 100vw;
+  margin-top: -10vh;
+  height: 20vh;
+
+  background: radial-gradient(circle, #fafafa 0%, #eeeeee 50%, #dcdcdc 100%);
+  box-shadow: 2px 0px 10px #0000002f;
+
+ background: radial-gradient(circle, #FFFAF4 0%, #FFF7EF 60%, #FFF3E8 100%);
+
+
+
+
+
+
+
 }
