@@ -87,25 +87,25 @@
 }
 
 #hero-logo .label {
-  font-size: 6vh;
+  font-size: 7vh;
   stroke: #76563f;
   stroke-width: 3;
   fill: none;
 }
 
 #hero-logo .given {
-  font-size: 7vh;
+  font-size: 8vh;
   fill: #76563f;
 }
 
 /* Line 1: HELLO, I'M */
 #hero-logo .line-hello {
-  transform: translateX(32vw) translateY(15px);
+  transform: translateX(25vw) translateY(15px);
 }
 
 /* Line 2: SEHTAJ SINGH */
 #hero-logo .line-sehtaj {
-  transform: translateX(30px) translateY(40px);
+  transform: translateX(0px) translateY(40px);
 }
 
 .social-icons {
