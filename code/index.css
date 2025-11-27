@@ -59,10 +59,11 @@
 #go {
   display: block;
   width: 20vw;
-  font-size: 2.5vh;
+  font-size: 2.2vh;
   text-align: center;
   margin-top: 3vh;
   text-decoration: none;
+  font-family: "Inika", serif;
   color: #76563f;
   padding: 0.5vh 3vw;
   border: 2px solid #76563f;
@@ -233,11 +234,11 @@ body.no-scroll {
 }
 
 .heading-solid {
-  font-family: "Righteous", sans-serif;
+  font-family: "Oswald", sans-serif;
   font-weight: 800;
   font-size: 3vh;
   background-color: #646d52ea;
-  color: #fff9f1;
+  color: #fff;
   position: relative;
   clip-path: polygon(8% 0, 100% 0, 92% 100%, 0% 100%);
   display: flex;
@@ -264,7 +265,6 @@ body.no-scroll {
 #one-B {
   background: url("../assets/about27.png") center/cover no-repeat;
   width: 50vw;
-
   aspect-ratio: 3006/3007;
 }
 
@@ -300,14 +300,16 @@ body.no-scroll {
 ------------- about -------------- */
 #about-front {
   display: flex;
+  margin-top: 4vh;
 }
 .front-left {
-  width: 45.5vw;
-  margin-left: 3vw;
+  width: 46.5vw;
+  margin-left: 2vw;
   margin-right: 3vw;
+  
 }
 .front-right {
-  width: 45.5vw;
+  width: 46.5vw;
 }
 
 .front-left img {
@@ -316,22 +318,52 @@ body.no-scroll {
 
 .front-right img {
   width: 100%;
+  
 }
 
 #about-back {
   width: 100vw;
   margin-top: -10vh;
   height: 20vh;
-
-  background: radial-gradient(circle, #fafafa 0%, #eeeeee 50%, #dcdcdc 100%);
-  box-shadow: 2px 0px 10px #0000002f;
-
- background: radial-gradient(circle, #FFFAF4 0%, #FFF7EF 60%, #FFF3E8 100%);
-
-
-
-
-
-
-
+  box-shadow: 10px 3px 10px #000000;
+  background: radial-gradient(circle, #fffaf4 0%, #fff7ef 60%, #fff3e8 100%);
 }
+
+
+.roles-block {
+  text-align: left;
+  height: 3.0rem;              /* keep the fixed height */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* ⬅️ was center – this caused the jump */
+  overflow: hidden;
+}
+
+/* reserve space for 2 lines */
+.line {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  line-height: 1.2;
+  min-height: 1.2rem;          /* 2 × 1.8rem ≈ 3.6rem total */
+}
+
+
+/* make the typed spans stable */
+#type-line1,
+#type-line2 {
+  font-weight: 700;
+  line-height: 1.2;
+  display: inline-block;
+}
+
+.line1 #type-line1 {
+  font-size: 1.2rem;
+}
+
+.line2 #type-line2 {
+  font-size: 1.0rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
