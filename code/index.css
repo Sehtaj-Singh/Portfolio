@@ -342,14 +342,12 @@ body.no-scroll {
 .roles-block {
   margin-top: 1vh;
   text-align: left;
-  height: 2.0rem;              /* keep the fixed height */
+  height: 2.0rem;              
   display: flex;
   flex-direction: column;
-  justify-content: flex-start; /* ⬅️ was center – this caused the jump */
+  justify-content: flex-start; 
   overflow: hidden;
 }
-
-
 
 /* make the typed spans stable */
 #type-line1{
@@ -388,4 +386,22 @@ body.no-scroll {
 }
 .test{
   display: flex;
+}
+
+.about-pro{
+  margin-top: 4vh;
+}
+
+.about-pro-tag h2{
+font-family: "Black Han Sans", sans-serif;
+font-weight: 200;
+ color: transparent;
+  -webkit-text-stroke: 1px #000;  /* black outline */
+  z-index: 1;
+  letter-spacing: 2px;
+}
+
+.about-pro-tag h1{
+font-family: "Black Han Sans", sans-serif;
+font-weight: 200;
 }
