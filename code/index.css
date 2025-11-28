@@ -392,30 +392,38 @@ body.no-scroll {
   margin-top: 4vh;
 }
 
-.about-pro-tag h2{
-font-family: "Black Han Sans", sans-serif;
-font-weight: 200;
- color: transparent;
-  -webkit-text-stroke: 2px #000;  /* black outline */
-  z-index: 1;
+#about-max{
+  display: flex;
+  gap: 10vw;
+}
+.about-pro-tag{
+  width: 40vw;
+}
+.about-pro-tag h3{
+font-family: 'Yanone Kaffeesatz', sans-serif;
+font-weight: 600;
   letter-spacing: 2px;
+  text-align: end;
+  margin-bottom: 1vh;
+  font-size: 4vh;
+  margin-top: 3vh;
+}
+.about-pro-tag h2{
+font-family: 'Yanone Kaffeesatz', sans-serif;
+font-weight: 600;
+  letter-spacing: 2px;
+  text-align: end;
+  font-size: 4vh;
+  margin-bottom: 1vh;
 }
 
 .about-pro-tag h1{
-font-family: "Black Han Sans", sans-serif;
-font-weight: 200;
-}
-
-.about-pro-tag1 h2{
 font-family: 'Yanone Kaffeesatz', sans-serif;
-font-weight: 200;
- font-weight: 400;
-    /* black outline */
-  z-index: 1;
-  letter-spacing: 2px;
+font-weight: 800;
+text-align: end;
+letter-spacing: 2px;
+font-size: 6vh;
 }
-
-.about-pro-tag1 h1{
-font-family: 'Yanone Kaffeesatz', sans-serif;
-font-weight: 700;
+.about-pro-para{
+  width: 50vw;
 }
