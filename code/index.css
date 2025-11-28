@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@300;400;500;600;700&display=swap');
+
 * {
   margin: 0;
   padding: 0;
@@ -7,8 +10,10 @@
   background-color: #ffffff;
 }
 .head {
+  font-family: "Oswald", sans-serif;
   position: fixed;
   top: 0;
+  letter-spacing: 2px;
   left: 0;
   z-index: 220;
   box-shadow: 2px 0px 8px #0000003a;
@@ -53,6 +58,7 @@
   text-align: justify;
   text-align-last: center;
   font-size: large;
+  margin-top: 2vh;
   font-family: "Inika", serif;
   line-height: 1.5;
 }
@@ -62,8 +68,8 @@
   font-size: 2.2vh;
   text-align: center;
   margin-top: 3vh;
+  font-family: 'Inter', sans-serif;
   text-decoration: none;
-  font-family: "Inika", serif;
   color: #76563f;
   padding: 0.5vh 3vw;
   border: 2px solid #76563f;
@@ -222,6 +228,7 @@ body.no-scroll {
 #ribb-wrap {
   display: flex;
   justify-content: center;
+  margin-top: 2vh;
 }
 #ribbon-right {
   margin-left: -5vw;
@@ -292,7 +299,6 @@ body.no-scroll {
   background: url("../assets/about34.png") center/cover no-repeat;
   width: 100vw;
   aspect-ratio: 4608/2602;
-
   margin-top: 4vh;
 }
 
@@ -306,14 +312,17 @@ body.no-scroll {
   width: 46.5vw;
   margin-left: 2vw;
   margin-right: 3vw;
-  
 }
 .front-right {
   width: 46.5vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .front-left img {
   width: 100%;
+  margin-top: 1vh;
 }
 
 .front-right img {
@@ -323,47 +332,46 @@ body.no-scroll {
 
 #about-back {
   width: 100vw;
-  margin-top: -10vh;
+  margin-top: -17vh;
   height: 20vh;
-  box-shadow: 10px 3px 10px #000000;
+  box-shadow: 3px 0px 10px #0000002f;
   background: radial-gradient(circle, #fffaf4 0%, #fff7ef 60%, #fff3e8 100%);
 }
 
 
 .roles-block {
+  margin-top: 1vh;
   text-align: left;
-  height: 3.0rem;              /* keep the fixed height */
+  height: 2.0rem;              /* keep the fixed height */
   display: flex;
   flex-direction: column;
   justify-content: flex-start; /* ⬅️ was center – this caused the jump */
   overflow: hidden;
 }
 
-/* reserve space for 2 lines */
-.line {
-  display: flex;
-  align-items: center;
-  gap: 4px;
-  line-height: 1.2;
-  min-height: 1.2rem;          /* 2 × 1.8rem ≈ 3.6rem total */
-}
 
 
 /* make the typed spans stable */
-#type-line1,
-#type-line2 {
+#type-line1{
   font-weight: 700;
   line-height: 1.2;
   display: inline-block;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  letter-spacing: 2px;
+  font-size: 1.35rem;
+  white-space: nowrap;
 }
 
-.line1 #type-line1 {
-  font-size: 1.2rem;
-}
-
-.line2 #type-line2 {
-  font-size: 1.0rem;
-  text-transform: uppercase;
-  letter-spacing: 0.06em;
+#about-go{
+  display: block;
+  width: 20vw;
+  font-size: 1.5vh;
+  text-align: center;
+  font-family: 'Inter', sans-serif;
+  text-decoration: none;
+  color: #76563f;
+  padding: 0.2vh 1vw;
+  border: 2px solid #76563f;
+  
 }
 

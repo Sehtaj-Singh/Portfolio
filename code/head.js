@@ -35,91 +35,55 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 
-  // ------------------- Type writer ------------
-   const roles = ["Front End", "Backend", "MERN Stack"];
-  const roleColors = ["#3d7cff"]; 
-  const devText = "Developer";
+  // ------------------- Type writer (ONE LINE, NO CURSOR) ------------
+  const roles = [
+    "Front End Developer",
+    "Backend Developer",
+    "MERN Stack Developer",
+  ];
 
-  const line1 = document.getElementById("type-line1");
-  const line2 = document.getElementById("type-line2");
-  const cursor1 = document.getElementById("cursor1");
-  const cursor2 = document.getElementById("cursor2");
+  const line = document.getElementById("type-line1"); // use top-line only
 
-  if (!line1 || !line2 || !cursor1 || !cursor2) return;
+  if (!line) return;
 
   let roleIndex = 0;
   let charIndex = 0;
-  let phase = "typingRole"; // typingRole → typingDev → erasingDev → erasingRole
+  let phase = "typing"; // typing → holding → erasing
 
-  const typeSpeed = 130;
-  const eraseSpeed = 90;
+  const typeSpeed = 120;
+  const eraseSpeed = 70;
   const holdTime = 5000;
 
-  line1.textContent = "";
-  line2.textContent = "";
-  cursor1.style.visibility = "visible";
-  cursor2.style.visibility = "hidden";
+  line.textContent = "";
 
   function step() {
     const currentRole = roles[roleIndex];
-    line1.style.color = roleColors[roleIndex] || "#000";
 
-    if (phase === "typingRole") {
-      cursor1.style.visibility = "visible";
-      cursor2.style.visibility = "hidden";
-
+    if (phase === "typing") {
       if (charIndex < currentRole.length) {
-        line1.textContent += currentRole.charAt(charIndex);
+        line.textContent += currentRole.charAt(charIndex);
         charIndex++;
         return setTimeout(step, typeSpeed);
       } else {
-        charIndex = 0;
-        phase = "typingDev";
-        return setTimeout(step, 400);
-      }
-    }
-
-    if (phase === "typingDev") {
-      cursor1.style.visibility = "hidden";
-      cursor2.style.visibility = "visible";
-
-      if (charIndex < devText.length) {
-        line2.textContent += devText.charAt(charIndex);
-        charIndex++;
-        return setTimeout(step, typeSpeed);
-      } else {
-        charIndex = devText.length;
-        phase = "erasingDev";
+        phase = "holding";
         return setTimeout(step, holdTime);
       }
     }
 
-    if (phase === "erasingDev") {
-      cursor1.style.visibility = "hidden";
-      cursor2.style.visibility = "visible";
-
-      if (charIndex > 0) {
-        line2.textContent = devText.substring(0, charIndex - 1);
-        charIndex--;
-        return setTimeout(step, eraseSpeed);
-      } else {
-        phase = "erasingRole";
-        charIndex = currentRole.length;
-        cursor1.style.visibility = "visible";
-        cursor2.style.visibility = "hidden";
-        return setTimeout(step, 200);
-      }
+    if (phase === "holding") {
+      phase = "erasing";
+      return setTimeout(step, 300);
     }
 
-    if (phase === "erasingRole") {
+    if (phase === "erasing") {
       if (charIndex > 0) {
-        line1.textContent = currentRole.substring(0, charIndex - 1);
+        line.textContent = currentRole.substring(0, charIndex - 1);
         charIndex--;
         return setTimeout(step, eraseSpeed);
       } else {
         roleIndex = (roleIndex + 1) % roles.length;
-        phase = "typingRole";
-        return setTimeout(step, 400);
+        phase = "typing";
+        return setTimeout(step, 300);
       }
     }
   }
