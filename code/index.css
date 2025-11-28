@@ -396,7 +396,7 @@ body.no-scroll {
 font-family: "Black Han Sans", sans-serif;
 font-weight: 200;
  color: transparent;
-  -webkit-text-stroke: 1px #000;  /* black outline */
+  -webkit-text-stroke: 2px #000;  /* black outline */
   z-index: 1;
   letter-spacing: 2px;
 }
@@ -404,4 +404,18 @@ font-weight: 200;
 .about-pro-tag h1{
 font-family: "Black Han Sans", sans-serif;
 font-weight: 200;
+}
+
+.about-pro-tag1 h2{
+font-family: 'Yanone Kaffeesatz', sans-serif;
+font-weight: 200;
+ font-weight: 400;
+    /* black outline */
+  z-index: 1;
+  letter-spacing: 2px;
+}
+
+.about-pro-tag1 h1{
+font-family: 'Yanone Kaffeesatz', sans-serif;
+font-weight: 700;
 }
