@@ -359,19 +359,33 @@ body.no-scroll {
   font-family: 'Yanone Kaffeesatz', sans-serif;
   letter-spacing: 2px;
   font-size: 1.35rem;
+  color: #583821;
   white-space: nowrap;
 }
 
 #about-go{
   display: block;
   width: 20vw;
-  font-size: 1.5vh;
+  font-size: 2vh;
   text-align: center;
   font-family: 'Inter', sans-serif;
   text-decoration: none;
-  color: #76563f;
-  padding: 0.2vh 1vw;
-  border: 2px solid #76563f;
+  color: #583821;
+  padding: 0.5vh 2vw;
+  border: 2px solid #583821;
+  border-radius: 17px;
+  margin-top: 2vh;
   
 }
 
+.front-right-text{
+  font-family: "Inika", serif;
+}
+
+.test h2{
+  font-weight: 400;
+   font-family: "Black Han Sans", sans-serif;
+}
+.test{
+  display: flex;
+}
