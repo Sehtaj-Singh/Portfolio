@@ -37,8 +37,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // ------------------- Type writer (ONE LINE, NO CURSOR) ------------
   const roles = [
-    "Front End Developer",
-    "Backend Developer",
+    "FRONTEND DEVELOPER",
+    "BACKEND DEVELOPER",
     "MERN Stack Developer",
   ];
 
