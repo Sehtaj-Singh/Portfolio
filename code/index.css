@@ -290,6 +290,7 @@ body.no-scroll {
   font-size: 3.5vh;
   text-align: center;
   margin-right: 5vw;
+  letter-spacing: 1px;
   margin-top: 4vh;
   margin-bottom: 1.5vh;
   color: #4c4742;
@@ -310,6 +311,7 @@ body.no-scroll {
   font-size: 3.5vh;
   text-align: center;
   margin-right: 5vw;
+  letter-spacing: 1px;
   margin-top: 4vh;
   margin-bottom: 1.5vh;
   color: #4c4742;
@@ -513,4 +515,28 @@ body.no-scroll {
 .about-down i {
   font-size: 3vh;
   color: #4c4742;
+}
+
+/* ------------ skills----------------- */
+.ui-card {
+  width: 88vw;
+  border-radius: 20px;
+  padding: 3vw;
+  margin-left: 3vw;
+  overflow: hidden;
+  border: 1px solid #4c4742;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 20px 0px;
+}
+
+.top-section{
+  height: 30vh;
+  background-color: #dcdcdc;
+  clip-path: polygon(55% 15%, 65% 0, 100% 0, 100% 100%, 0 100%, 0 15%);
+  position: relative;
+}
+
+.border{
+position: absolute;
+z-index: 4;
+color: #000;
 }
