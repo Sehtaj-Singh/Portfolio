@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@300;400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@300;400;500;600;700&display=swap");
 
 * {
   margin: 0;
@@ -68,7 +68,7 @@
   font-size: 2.2vh;
   text-align: center;
   margin-top: 3vh;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   text-decoration: none;
   color: #76563f;
   padding: 0.5vh 3vw;
@@ -317,7 +317,7 @@ body.no-scroll {
   width: 46.5vw;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
 }
 
 .front-left img {
@@ -327,7 +327,6 @@ body.no-scroll {
 
 .front-right img {
   width: 100%;
-  
 }
 
 #about-back {
@@ -338,92 +337,137 @@ body.no-scroll {
   background: radial-gradient(circle, #fffaf4 0%, #fff7ef 60%, #fff3e8 100%);
 }
 
-
 .roles-block {
   margin-top: 1vh;
   text-align: left;
-  height: 2.0rem;              
+  height: 2rem;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start; 
+  justify-content: flex-start;
   overflow: hidden;
 }
 
 /* make the typed spans stable */
-#type-line1{
-  font-weight: 700;
+#type-line1 {
+  font-weight: 400;
   line-height: 1.2;
   display: inline-block;
-  font-family: 'Yanone Kaffeesatz', sans-serif;
+  font-family: "Yanone Kaffeesatz", sans-serif;
   letter-spacing: 2px;
-  font-size: 1.35rem;
-  color: #583821;
+  font-size: 1.4rem;
+  color: #76563f;
   white-space: nowrap;
 }
 
-#about-go{
-  display: block;
-  width: 20vw;
-  font-size: 2vh;
-  text-align: center;
-  font-family: 'Inter', sans-serif;
-  text-decoration: none;
-  color: #583821;
-  padding: 0.5vh 2vw;
-  border: 2px solid #583821;
-  border-radius: 17px;
-  margin-top: 2vh;
-  
+/* “Developer” styled within the line */
+.dev-word {
+  font-weight: 900;
+  letter-spacing: 2px;
+  color: #624530;
+   font-size: 1.4rem;
 }
 
-.front-right-text{
+#about-go {
+  display: block;
+  width: 20vw;
+  font-size: 1.6vh;
+  text-align: center;
+  font-family: "Inter", sans-serif;
+  text-decoration: none;
+  color: #76563f;
+  padding: 0.5vh 1.5vw;
+  border: 2px solid #76563f;
+  margin-top: 2vh;
+}
+
+.front-right-text {
   font-family: "Inika", serif;
 }
 
-.test h2{
-  font-weight: 400;
-   font-family: "Black Han Sans", sans-serif;
-}
-.test{
-  display: flex;
-}
-
-.about-pro{
+.about-pro {
   margin-top: 4vh;
 }
 
-#about-max{
+#about-max {
   display: flex;
-  gap: 10vw;
+  gap: 6vw;
+  margin-top: 5vh;
 }
-.about-pro-tag{
+.about-pro-tag {
   width: 40vw;
 }
-.about-pro-tag h3{
-font-family: 'Yanone Kaffeesatz', sans-serif;
-font-weight: 600;
+.about-pro-tag h3 {
+  font-family: "Yanone Kaffeesatz", sans-serif;
+  font-weight: 400;
   letter-spacing: 2px;
   text-align: end;
-  margin-bottom: 1vh;
+  margin-bottom: 1.5vh;
   font-size: 4vh;
-  margin-top: 3vh;
+  color: #76563f;
 }
-.about-pro-tag h2{
-font-family: 'Yanone Kaffeesatz', sans-serif;
-font-weight: 600;
+.about-pro-tag h2 {
+  font-family: "Yanone Kaffeesatz", sans-serif;
+  font-weight: 400;
   letter-spacing: 2px;
   text-align: end;
   font-size: 4vh;
+  margin-bottom: 1.5vh;
+  color: #76563f;
+}
+
+.about-pro-tag h1 {
+  font-family: "Yanone Kaffeesatz", sans-serif;
+  font-weight: 800;
+  text-align: end;
+  letter-spacing: 2px;
+  font-size: 6vh;
+  color: #76563f;
+}
+.about-pro-para {
+  width: 50vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+.about-pro-para p {
+  
+  font-size: 12px;
+  width: 40vw;
+  font-family: "Inika", serif;
+}
+
+#about-go-para {
+  display: block;
+  width: 20vw;
+  font-size: 1.6vh;
+  text-align: center;
+  font-family: "Inter", sans-serif;
+  text-decoration: none;
+  color: #76563f;
+  padding: 0.5vh 1.5vw;
+  border: 2px solid #76563f;
+  margin-top: 2vh;
   margin-bottom: 1vh;
 }
 
-.about-pro-tag h1{
-font-family: 'Yanone Kaffeesatz', sans-serif;
-font-weight: 800;
-text-align: end;
-letter-spacing: 2px;
-font-size: 6vh;
+.about-down{
+  width: 80vw;
+  border-top: 1px solid #76563f ;
+  margin-left: 10vw;
+  margin-top: 4vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 2vh;
 }
-.about-pro-para{
-  width: 50vw;
+
+.about-down h2{
+margin-top: 1vh;
+ text-align: center;
+ font-size: 2.5vh;
+ font-family: "Inter", sans-serif;
+}
+
+.about-down i{
+  font-size: 3vh;
 }
