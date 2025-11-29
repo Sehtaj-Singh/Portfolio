@@ -72,9 +72,9 @@
   text-decoration: none;
   color: #76563f;
   padding: 0.5vh 3vw;
- letter-spacing: 1px;
+  letter-spacing: 1px;
   margin-bottom: 3vh;
-   background: linear-gradient(135deg, #e2c7ac 0%, #a97855 100%);
+  background: linear-gradient(135deg, #e2c7ac 0%, #a97855 100%);
   color: #fff;
 }
 #info {
@@ -266,14 +266,13 @@ body.no-scroll {
 }
 #one-A {
   background: url("../assets/about18.png") center/cover no-repeat;
-  width: 50vw;
-
+  width: 55vw;
   aspect-ratio: 3006/3007;
 }
 
 #one-B {
   background: url("../assets/about27.png") center/cover no-repeat;
-  width: 50vw;
+  width: 55vw;
   aspect-ratio: 3006/3007;
 }
 
@@ -287,21 +286,60 @@ body.no-scroll {
   width: 50vw;
 }
 .A-para h3 {
-  font-family: "Oswald", sans-serif;
-  font-size: 3vh;
+  font-family: "Yanone Kaffeesatz", sans-serif;
+  font-size: 3.5vh;
   text-align: center;
+  margin-right: 5vw;
+  margin-top: 4vh;
+  margin-bottom: 1.5vh;
   color: #4c4742;
+}
+.A-para p {
+  text-align: center;
+  font-family: "Inika", serif;
+  width: 45vw;
+  margin-right: 2.5vw;
+  font-size: 14px;
 }
 
 .B-para {
   width: 50vw;
 }
+.B-para h3 {
+  font-family: "Yanone Kaffeesatz", sans-serif;
+  font-size: 3.5vh;
+  text-align: center;
+  margin-right: 5vw;
+  margin-top: 4vh;
+  margin-bottom: 1.5vh;
+  color: #4c4742;
+}
+.B-para p {
+  text-align: center;
+  font-family: "Inika", serif;
+  width: 45vw;
+  margin-right: 2.5vw;
+  font-size: 14px;
+}
+
 
 .section-three {
-  background: url("../assets/about34.png") center/cover no-repeat;
+  background:
+    linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0)),  /* gradient */
+    url("../assets/about34.png") center/cover no-repeat;   
   width: 100vw;
   aspect-ratio: 4608/2602;
   margin-top: 4vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.section-three h3{
+  text-align: center;
+  font-size: 4vh;
+  color: #ffffff;
+  font-family: "Yanone Kaffeesatz", sans-serif;
+  letter-spacing: 3px;
 }
 
 /* 
@@ -454,7 +492,7 @@ body.no-scroll {
 
 .about-down {
   width: 80vw;
-  border-top: 1px solid #76563f;
+  border-top: 1px solid #4c4742;
   margin-left: 10vw;
   margin-top: 7vh;
   display: flex;
@@ -469,6 +507,7 @@ body.no-scroll {
   font-size: 2.5vh;
   font-family: "Inter", sans-serif;
   color: #4c4742;
+  line-height: 1.4;
 }
 
 .about-down i {

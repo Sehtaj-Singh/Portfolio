@@ -51,7 +51,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const typeSpeed = 110;
   const eraseSpeed = 80;
-  const holdTime = 2000;
+  const holdTime = 5000;
 
   function renderCurrentText() {
     const full = roles[roleIndex];
