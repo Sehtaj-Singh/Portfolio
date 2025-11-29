@@ -317,15 +317,15 @@ body.no-scroll {
 .B-para p {
   text-align: center;
   font-family: "Inika", serif;
-  width: 45vw;
-  margin-right: 2.5vw;
+  width: 43vw;
+  margin-left: 2.5vw;
   font-size: 14px;
 }
 
 
 .section-three {
   background:
-    linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0)),  /* gradient */
+    linear-gradient(to top, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0)),  /* gradient */
     url("../assets/about34.png") center/cover no-repeat;   
   width: 100vw;
   aspect-ratio: 4608/2602;
