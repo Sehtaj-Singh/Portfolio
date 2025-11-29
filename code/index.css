@@ -72,8 +72,10 @@
   text-decoration: none;
   color: #76563f;
   padding: 0.5vh 3vw;
-  border: 2px solid #76563f;
+ letter-spacing: 1px;
   margin-bottom: 3vh;
+   background: linear-gradient(135deg, #e2c7ac 0%, #a97855 100%);
+  color: #fff;
 }
 #info {
   display: flex;
@@ -364,7 +366,7 @@ body.no-scroll {
   font-weight: 900;
   letter-spacing: 2px;
   color: #624530;
-   font-size: 1.4rem;
+  font-size: 1.4rem;
 }
 
 #about-go {
@@ -391,7 +393,7 @@ body.no-scroll {
 #about-max {
   display: flex;
   gap: 6vw;
-  margin-top: 5vh;
+  margin-top: 7vh;
 }
 .about-pro-tag {
   width: 40vw;
@@ -417,7 +419,7 @@ body.no-scroll {
 
 .about-pro-tag h1 {
   font-family: "Yanone Kaffeesatz", sans-serif;
-  font-weight: 800;
+  font-weight: 600;
   text-align: end;
   letter-spacing: 2px;
   font-size: 6vh;
@@ -430,44 +432,46 @@ body.no-scroll {
   justify-content: end;
 }
 .about-pro-para p {
-  
-  font-size: 12px;
-  width: 40vw;
+  font-size: 13px;
+  width: 45vw;
   font-family: "Inika", serif;
 }
 
 #about-go-para {
   display: block;
   width: 20vw;
-  font-size: 1.6vh;
+  font-size: 1.5vh;
   text-align: center;
   font-family: "Inter", sans-serif;
   text-decoration: none;
-  color: #76563f;
-  padding: 0.5vh 1.5vw;
-  border: 2px solid #76563f;
+  padding: 0.5vh 1vw;
+  background: linear-gradient(135deg, #e2c7ac 0%, #a97855 100%);
+  color: #fff;
+  letter-spacing: 1px;
   margin-top: 2vh;
   margin-bottom: 1vh;
 }
 
-.about-down{
+.about-down {
   width: 80vw;
-  border-top: 1px solid #76563f ;
+  border-top: 1px solid #76563f;
   margin-left: 10vw;
-  margin-top: 4vh;
+  margin-top: 7vh;
   display: flex;
   align-items: center;
   flex-direction: column;
   gap: 2vh;
 }
 
-.about-down h2{
-margin-top: 1vh;
- text-align: center;
- font-size: 2.5vh;
- font-family: "Inter", sans-serif;
+.about-down h2 {
+  margin-top: 2vh;
+  text-align: center;
+  font-size: 2.5vh;
+  font-family: "Inter", sans-serif;
+  color: #4c4742;
 }
 
-.about-down i{
+.about-down i {
   font-size: 3vh;
+  color: #4c4742;
 }
