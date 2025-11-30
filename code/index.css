@@ -522,29 +522,30 @@ body.no-scroll {
   width: 88vw;
   border-radius: 20px;
   padding: 3vw;
+  height: 40vh;
   margin-left: 3vw;
   overflow: hidden;
   border: 1px solid #4c4742;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 20px 0px;
   position: relative;
-  
 }
 
 .top-section{
   position: relative;
   height: 30vh;
   width: 100%;
-background-color: #fffaf4;
-padding-top: 6vh;
+background-color: #eeeeee;
+padding-top: 8vh;
   z-index: 3;
-  box-shadow: rgba(100, 100, 111, 0.2) 12px 7px 0px 0px;
   -webkit-clip-path: url(#custom-notch-clip);
   clip-path: url(#custom-notch-clip);
 }
 .top-section h3{
    font-family: "Yanone Kaffeesatz", sans-serif;
    text-align: center;
-   font-size: 2.5vh;
+   font-size: 2.2vh;
+   width: 80%;
+   margin-left: 10%;
     font-family: "Inter", sans-serif;
 }
 #border{
@@ -556,6 +557,122 @@ padding-top: 6vh;
   font-size: 3.5vh;
   letter-spacing: 3px;
   left: 8vw;
+
+  
 }
 
+.top-section .logos img{
+  width: 8vw;
+}
 
+.logos{
+  position: absolute;
+  top: 1vh;
+  right: 8vw;
+  display: flex;
+  gap: 5vw;
+}
+
+.sr-only {
+  position: absolute !important;
+  width: 1px; height: 1px;
+  padding: 0; margin: -1px;
+  overflow: hidden; clip: rect(0 0 0 0);
+  white-space: nowrap; border: 0;
+}
+
+/* layout */
+.skill-row {
+  padding-left: 4vw;
+  padding-right: 4vw ;
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  max-width: 720px;
+  margin: 12px 0;
+  font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+}
+
+/* logo placeholder (replace with <img> inside) */
+.skill-logo{
+  width: 44px;
+  height: 44px;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 44px;
+}
+
+.skill-logo img{
+  width: 10vw;
+}
+
+/* meta: label + progress row */
+.skill-meta {
+  flex: 1 1 auto;
+  min-width: 0;
+}
+
+/* label */
+.skill-name {
+  font-weight: 700;
+  font-size: 14px;
+  color: #222;
+  margin-bottom: 8px;
+  letter-spacing: 0.6px;
+}
+
+/* progress wrapper: track + percent */
+.skill-progress-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+/* percent text */
+.skill-percent {
+  min-width: 38px;
+  text-align: right;
+  font-weight: 600;
+  color: #333;
+  font-size: 13px;
+}
+
+/* progress track (invisible background) and the fill */
+.skill-progress {
+  --height: 10px;
+  position: relative;
+  flex: 1 1 auto;
+  height: var(--height);
+  background: linear-gradient(180deg, rgba(0,0,0,0.06), rgba(0,0,0,0.03));
+  border-radius: calc(var(--height) / 2);
+  overflow: visible; /* allow shadow */
+  box-shadow: inset 0 1px 0 rgba(255,255,255,0.45);
+}
+
+/* the fill itself (use pseudo-element so drop-shadow applies to the painted fill) */
+.skill-progress::before{
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: calc(var(--val) * 1%); /* --val must be set inline (style="--val:82;") */
+  border-radius: calc(var(--height) / 2);
+  /* fill style: gradient */
+  background: linear-gradient(90deg, #18a3ff 0%, #4ad3ff 60%);
+  /* subtle inner highlight */
+  box-shadow:
+    0 4px 14px rgba(24,163,255,0.18),  /* outer colored shadow */
+    inset 0 1px 0 rgba(255,255,255,0.35); /* glossy strip */
+  /* smooth transition if you animate value */
+  transition: width 800ms cubic-bezier(.2,.9,.2,1);
+  will-change: width;
+}
+
+/* smaller size variant (optional) */
+.skill-row.small .skill-logo { width:36px; height:36px; border-radius:6px;}
+.skill-row.small .skill-name { font-size:13px; }
+.skill-row.small .skill-percent { font-size:12px; }
+.skill-row.small .skill-progress { --height:8px; }
