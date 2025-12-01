@@ -525,12 +525,12 @@ body.no-scroll {
   padding: 3vw;
   margin-bottom: 4vh;
   margin-left: 3vw;
-  overflow: hidden;
+  overflow: hidden; 
   border: 1px solid #3e3c3a81;
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 20px 0px;
+  box-shadow: rgba(100, 100, 111, 0.2) 1px 7px 20px 0px;
   position: relative;
 }
-
+  
 .top-section {
   position: relative; 
   width: 100%;
