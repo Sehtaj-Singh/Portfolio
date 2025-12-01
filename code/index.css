@@ -523,6 +523,7 @@ body.no-scroll {
   width: 88vw;
   border-radius: 20px;
   padding: 3vw;
+  margin-bottom: 4vh;
   margin-left: 3vw;
   overflow: hidden;
   border: 1px solid #3e3c3a81;
@@ -531,7 +532,7 @@ body.no-scroll {
 }
 
 .top-section {
-  position: relative;
+  position: relative; 
   width: 100%;
   background-color: #f5f7f8;
   padding-top: 10vh;
