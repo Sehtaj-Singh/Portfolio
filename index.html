@@ -30,7 +30,7 @@
     </header>
 
     <section class="hero">
-      <img src="assets/test16.png">
+      <img src="assets/test16.png" alt="Hero Illustration">
     </section>
 
     <div id="info">
@@ -64,31 +64,28 @@
         </svg>
       </div>
 
-
-
       <p id="para">
         I love designing and building custom websites, creating clean user experiences with a blend of frontend and
         backend development. I enjoy crafting modern interfaces, and turning concepts into functional, visually
         appealing digital work.
-
       </p>
 
       <div class="social-icons">
 
-        <a href="#" target="_blank">
+        <a href="#" target="_blank" aria-label="WhatsApp">
           <i class="fa-brands fa-whatsapp"></i>
         </a>
 
-        <a href="#" target="_blank">
+        <a href="#" target="_blank" aria-label="Facebook">
           <i class="fa-brands fa-facebook-f"></i>
         </a>
 
-        <a href="#" target="_blank">
+        <a href="#" target="_blank" aria-label="Instagram">
           <i class="fa-brands fa-instagram"></i>
         </a>
 
-        <a href="#" target="_blank">
-          <img src="assets/fiverr.png">
+        <a href="#" target="_blank" aria-label="Fiverr">
+          <img src="assets/fiverr.png" alt="Fiverr">
         </a>
 
       </div>
@@ -114,19 +111,18 @@
           <span id="type-line1"></span>
         </div>
 
-        <img src="assets/above4.jpeg">
+        <img src="assets/above4.jpeg" alt="About left">
       </div>
 
       <div class="front-right">
-        <img src="assets/above5.jpg">
+        <img src="assets/above5.jpg" alt="About right">
 
         <a id="about-go" href="#">Projects</a>
       </div>
 
     </div>
 
-    <div id="about-back">
-    </div>
+    <div id="about-back"></div>
 
     <div class="about-pro">
 
@@ -138,32 +134,20 @@
         </div>
 
         <div class="about-pro-para">
-          <p>The process centers around clear layouts, stable code, and a polished overall experience.
-
-          </p>
-
+          <p>The process centers around clear layouts, stable code, and a polished overall experience.</p>
           <a id="about-go-para" href="#">Projects</a>
-
         </div>
 
       </div>
 
       <div class="about-down">
         <h2>Focused on building clear, reliable, and well-structured digital experiences.</h2>
-
         <i class="fas fa-arrow-down"></i>
-
       </div>
 
     </div>
 
-
-
   </section>
-
-
-
-
 
   <section id="service">
     <div id="ribb-wrap">
@@ -176,9 +160,7 @@
 
     <div class="section-one">
 
-      <div id="one-A">
-
-      </div>
+      <div id="one-A"></div>
 
       <div class="A-para">
         <h3>Design</h3>
@@ -196,9 +178,7 @@
         </p>
       </div>
 
-      <div id="one-B">
-      </div>
-
+      <div id="one-B"></div>
 
     </div>
 
@@ -208,7 +188,8 @@
 
   </section>
 
-  <section>
+  <!-- SKILLS SECTION -->
+  <section id="skills">
     <div id="ribb-wrap">
       <div class="section-heading">
         <span id="ribbon-left"></span>
@@ -219,8 +200,8 @@
 
     <div>
 
-      <!-- Place this near top of <body> once -->
-      <svg width="0" height="0">
+      <!-- SVG clipPath (notch) -->
+      <svg width="0" height="0" aria-hidden="true">
         <defs>
           <clipPath id="custom-notch-clip" clipPathUnits="objectBoundingBox">
             <path d="M -0.000567 0.263897
@@ -239,65 +220,115 @@
         </defs>
       </svg>
 
-
+      <!-- MAIN FRONTEND CARD -->
       <div class="ui-card">
         <h3 id="border">FRONTEND</h3>
 
-
-
         <div class="top-section">
           <div class="logos">
-            <img src="assets/logo.png">
-            <img src="assets/logo2.png">
+            <!-- you can change these logos as you like -->
+            <img src="assets/logo.png" alt="Logo 1">
+            <img src="assets/logo2.png" alt="Logo 2">
           </div>
 
-          <h3>Crafting modern layouts with clean structure and smooth interaction.
-          </h3>
+          <h3>Crafting modern layouts with clean structure and smooth interaction.</h3>
 
-          <!-- SKILL ROW: logo (left) | label | progress bar (right) -->
-          <div class="skill-row">
+          <!-- HTML -->
+          <div class="skill-row html-skill" data-target="88">
             <div class="skill-logo" aria-hidden="true">
-              <img src="assets/html.png">
-              <!-- Drop your logo image inside, e.g. <img src="..." alt=""> -->
+              <!-- leave space for your icon -->
+              <img src="assets/html.png" alt="HTML logo">
             </div>
 
             <div class="skill-meta">
               <div class="skill-name">HTML</div>
-              <div class="skill-progress-wrapper" aria-hidden="true">
-                <div class="skill-progress" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="82"
-                  style="--val:82;">
-                  <span class="sr-only">82% proficiency</span>
+              <div class="skill-progress-wrapper">
+                <div class="skill-progress" role="progressbar" aria-valuemin="0" aria-valuemax="100"
+                  aria-valuenow="0">
+                  <span class="sr-only">0% proficiency</span>
                 </div>
-                <!-- numeric percentage on the right -->
-                <div class="skill-percent">82%</div>
+                <div class="skill-percent">0%</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- CSS -->
+          <div class="skill-row css-skill" data-target="76">
+            <div class="skill-logo" aria-hidden="true">
+              <!-- drop your CSS icon here -->
+              <img src="assets/text.png" alt="HTML logo">
+            </div>
+
+            <div class="skill-meta">
+              <div class="skill-name">CSS</div>
+              <div class="skill-progress-wrapper">
+                <div class="skill-progress" role="progressbar" aria-valuemin="0" aria-valuemax="100"
+                  aria-valuenow="0">
+                  <span class="sr-only">0% proficiency</span>
+                </div>
+                <div class="skill-percent">0%</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- JavaScript -->
+          <div class="skill-row js-skill" data-target="72">
+            <div class="skill-logo" aria-hidden="true">
+              <!-- drop your JS icon here -->
+             <img src="assets/js.png" alt="HTML logo">
+            </div>
+
+            <div class="skill-meta">
+              <div class="skill-name">JavaScript</div>
+              <div class="skill-progress-wrapper">
+                <div class="skill-progress" role="progressbar" aria-valuemin="0" aria-valuemax="100"
+                  aria-valuenow="0">
+                  <span class="sr-only">0% proficiency</span>
+                </div>
+                <div class="skill-percent">0%</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- React -->
+          <div class="skill-row react-skill" data-target="65">
+            <div class="skill-logo" aria-hidden="true">
+              <!-- drop your React icon here -->
+              <img src="assets/programing.png" alt="HTML logo">
+            </div>
+
+            <div class="skill-meta">
+              <div class="skill-name">React</div>
+              <div class="skill-progress-wrapper">
+                <div class="skill-progress" role="progressbar" aria-valuemin="0" aria-valuemax="100"
+                  aria-valuenow="0">
+                  <span class="sr-only">0% proficiency</span>
+                </div>
+                <div class="skill-percent">0%</div>
               </div>
             </div>
           </div>
 
         </div>
 
-
         <div class="bottom-section">
-          <!-- your bottom content -->
+          <!-- optional extra content -->
         </div>
       </div>
 
+      <!-- SECOND CARD (kept empty for now, you can use later) -->
       <div class="ui-card">
-        <h3 id="border">FRONTEND</h3>
+        <h3 id="border">BACKEND</h3>
         <div class="top-section">
-
+          <!-- add backend skills later if you want -->
         </div>
-
-        <div class="bottom-section">
-          <!-- your bottom content -->
-        </div>
+        <div class="bottom-section"></div>
       </div>
 
     </div>
   </section>
 
   <aside id="sideModal" class="side-modal" role="dialog" aria-modal="true" aria-hidden="true" aria-label="Main menu">
-
     <header id="modal-head">
       <button class="modal-close" aria-label="Close menu">&times;</button>
     </header>
@@ -312,7 +343,6 @@
       </nav>
     </div>
   </aside>
-
 
   <script src="code/head.js"></script>
 </body>

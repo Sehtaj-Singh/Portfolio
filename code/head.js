@@ -35,7 +35,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 
-    // ------------- ONE-LINE TYPEWRITER WITH STYLED "DEVELOPER" --------------
+  // ------------- ONE-LINE TYPEWRITER WITH STYLED "DEVELOPER" --------------
   const roles = [
     "Front-End Developer",
     "Back-End Developer",
@@ -58,7 +58,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const devIndex = full.indexOf(devWord);
     const visible = full.slice(0, charIndex);
 
-    // 👇 smaller size only for "MERN Stack Developer"
+    // smaller size only for "MERN Stack Developer" (if added later)
     if (full.includes("MERN Stack")) {
       line.classList.add("is-long");
     } else {
@@ -66,7 +66,6 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     if (devIndex === -1 || charIndex <= devIndex) {
-      // we haven't reached "Developer" yet
       line.innerHTML = visible;
     } else {
       const beforeDev = visible.slice(0, devIndex);
@@ -97,7 +96,7 @@ document.addEventListener("DOMContentLoaded", () => {
     if (phase === "erasing") {
       if (charIndex > 0) {
         charIndex--;
-        renderCurrentText(); // 👈 erase letter-by-letter, including Developer
+        renderCurrentText();
         return setTimeout(step, eraseSpeed);
       } else {
         roleIndex = (roleIndex + 1) % roles.length;
@@ -110,5 +109,58 @@ document.addEventListener("DOMContentLoaded", () => {
   charIndex = 0;
   renderCurrentText();
   step();
+
+  // ------------- SKILL BAR ANIMATION ON SCROLL --------------
+  const skillRows = document.querySelectorAll(".skill-row");
+
+  if (skillRows.length) {
+    const animateSkillRow = (row) => {
+      const progressEl = row.querySelector(".skill-progress");
+      const percentEl = row.querySelector(".skill-percent");
+      const srText = row.querySelector(".sr-only");
+      const target = parseInt(row.dataset.target || "0", 10);
+
+      const duration = 1200;
+      const start = performance.now();
+
+      function frame(now) {
+        const elapsed = now - start;
+        const t = Math.min(elapsed / duration, 1);
+        const eased = 1 - Math.pow(1 - t, 3); // ease-out cubic
+        const current = Math.round(target * eased);
+
+        progressEl.style.setProperty("--val", current);
+        progressEl.setAttribute("aria-valuenow", String(current));
+        percentEl.textContent = current + "%";
+        if (srText) srText.textContent = current + "% proficiency";
+
+        if (t < 1) {
+          requestAnimationFrame(frame);
+        }
+      }
+
+      requestAnimationFrame(frame);
+    };
+
+    const observer = new IntersectionObserver(
+      (entries, obs) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            const row = entry.target;
+            if (row.dataset.animated === "true") return;
+
+            row.dataset.animated = "true";
+            animateSkillRow(row);
+            obs.unobserve(row);
+          }
+        });
+      },
+      {
+        threshold: 0.4, // ~40% of row visible
+      }
+    );
+
+    skillRows.forEach((row) => observer.observe(row));
+  }
 
 });
