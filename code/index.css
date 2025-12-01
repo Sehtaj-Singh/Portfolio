@@ -534,7 +534,7 @@ body.no-scroll {
   position: relative;
   width: 100%;
   background-color: #f5f7f8;
-  padding-top: 8vh;
+  padding-top: 10vh;
   padding-bottom: 3vh;
   z-index: 3;
   -webkit-clip-path: url(#custom-notch-clip);
@@ -553,23 +553,23 @@ body.no-scroll {
 
 #border {
   position: absolute;
-  top: 3vh;
+  top: 4vh;
   font-family: "Yanone Kaffeesatz", sans-serif;
   z-index: 5;
-  font-size: 3.5vh;
-  letter-spacing: 3px;
+  font-size: 4.5vh;
+  letter-spacing: 4px;
   left: 8vw;
   color: #0a3d62;
 }
 
 .top-section .logos img {
-  width: 8vw;
+  width: 10vw;
 }
 
 .logos {
   position: absolute;
-  top: 1vh;
-  right: 8vw;
+  top: 2vh;
+  right: 7vw;
   display: flex;
   gap: 5vw;
 }
