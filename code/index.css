@@ -868,54 +868,71 @@ body.no-scroll {
 /* ----------------project ---------------- */
 
 #project-card{
-  width: 88vw;
+  width: 94vw;
   border: 1px solid #3e3c3a81;
   margin-left: 3vw;
-  padding: 3vw;
-  background-color: #f5f7f9;
   display: flex;
   gap:5vw;
   border-radius: 18px;
-  position: relative;
 }
 .project-image{
   width:35vw;
+  background-color: #f5f7f9;
+  padding: 2vh 3vw ;
+  border-bottom-left-radius: 18px;
+  border-top-left-radius: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .project-image img{
   width: 100%;
-  margin-top: 3vh;
+  
+  
+  
  
 }
 #status{
-  position: absolute;
-  top: 1vw;
-  right: 3vw;
+  letter-spacing: 1px;
   font-size: 1.5vh;
-  padding: 0.5vh 2vw;
+  padding: 0.6vh 3vw;
   background-color: #323a40;
   color: #fff;
   border-radius: 14px;
-
 }
 
 .project-data {
-margin-top: 3vh;
-width: 55vw;
+width: 54vw;
+padding-top: 2vh;
+
 }
 
 .project-data h3{
   color: #0a3d62;
   font-family: "Yanone Kaffeesatz", sans-serif;
-  font-size: 3vh;
+  font-size: 3.2vh;
   letter-spacing: 2px;
-  
+  margin-bottom: 1vh;
+  font-weight: 800;
 }
 
 .project-data p{
-font-size: 16px;
+  margin-top: 1vh;
+font-size: 14px;
+font-family: "Inika", serif;
   overflow: hidden;
   display: -webkit-box;
-  -webkit-line-clamp: 4;   /* number of lines */
+  -webkit-line-clamp: 3;   /* number of lines */
   -webkit-box-orient: vertical;
+}
+
+#button{
+  width: 80%;
+  
+  text-align: center;
+  margin-top: 1vh;
+  color: #0a3d62;
+  padding: 0.5vh 0;
+  border-radius: 7px;
 }
