@@ -35,11 +35,24 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 
+  // CLOSE MAIN MODAL WHEN A LINK IS CLICKED
+  const sideModalLinks = document.querySelectorAll("#sideModal a");
+
+  sideModalLinks.forEach((link) => {
+    link.addEventListener("click", () => {
+      // close the side modal
+      modal.classList.remove("open");
+      menuBtn.classList.remove("open");
+      document.body.classList.remove("no-scroll");
+
+      // switch icon back to bars
+      menuIcon.classList.remove("fa-xmark");
+      menuIcon.classList.add("fa-bars");
+    });
+  });
+
   // ------------- ONE-LINE TYPEWRITER WITH STYLED "DEVELOPER" --------------
-  const roles = [
-    "Front-End Developer",
-    "Back-End Developer",
-  ];
+  const roles = ["Front-End Developer", "Back-End Developer"];
   const devWord = "Developer";
 
   const line = document.getElementById("type-line1");
@@ -163,4 +176,96 @@ document.addEventListener("DOMContentLoaded", () => {
     skillRows.forEach((row) => observer.observe(row));
   }
 
+  // ---------- PROJECT MODAL (PROJECT CARD CLICK) ----------
+  const projectCard = document.getElementById("project-card");
+  const projectModal = document.getElementById("projectModal");
+  const projectCloseBtn = projectModal
+    ? projectModal.querySelector(".modal-close")
+    : null;
+
+  function openProjectModal() {
+    if (!projectModal) return;
+    projectModal.classList.add("open");
+    document.body.classList.add("no-scroll");
+  }
+
+  function closeProjectModal() {
+    if (!projectModal) return;
+    projectModal.classList.remove("open");
+    document.body.classList.remove("no-scroll");
+  }
+
+  if (projectCard && projectModal) {
+    projectCard.addEventListener("click", (e) => {
+      e.preventDefault(); // prevent anchor default scroll
+      openProjectModal();
+    });
+  }
+
+  if (projectCloseBtn) {
+    projectCloseBtn.addEventListener("click", closeProjectModal);
+  }
+
+  // ESC closes whichever modal is open – menu or project
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape") {
+      if (modal.classList.contains("open")) {
+        closeModal();
+      }
+      if (projectModal && projectModal.classList.contains("open")) {
+        closeProjectModal();
+      }
+    }
+  });
+
+  // ------------------ PROJECT MODAL IMAGE SLIDER ------------------ //
+
+  const track = document.querySelector(".slider-track");
+  const slides = document.querySelectorAll(".slide-img");
+  const sliderWrapper = document.querySelector(".slider-wrapper");
+  let index = 0;
+
+  // move slider correctly
+  function updateSlider() {
+    const slideWidth = sliderWrapper.clientWidth;
+    track.style.transform = `translateX(${-index * slideWidth}px)`;
+  }
+
+  // Buttons
+  document.querySelector(".left-btn").addEventListener("click", () => {
+    index = index <= 0 ? slides.length - 1 : index - 1;
+    updateSlider();
+  });
+
+  document.querySelector(".right-btn").addEventListener("click", () => {
+    index = index >= slides.length - 1 ? 0 : index + 1;
+    updateSlider();
+  });
+
+  // Touch swipe
+  let startX = 0;
+  let moveX = 0;
+
+  track.addEventListener("touchstart", (e) => {
+    startX = e.touches[0].clientX;
+  });
+
+  track.addEventListener("touchmove", (e) => {
+    moveX = e.touches[0].clientX - startX;
+  });
+
+  track.addEventListener("touchend", () => {
+    if (Math.abs(moveX) > 50) {
+      if (moveX < 0) index = index >= slides.length - 1 ? 0 : index + 1;
+      else index = index <= 0 ? slides.length - 1 : index - 1;
+    }
+    updateSlider();
+    moveX = 0;
+  });
+
+  // Recalculate on window resize
+  window.addEventListener("resize", updateSlider);
+
+  // Initial call
+  updateSlider();
 });

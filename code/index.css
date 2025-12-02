@@ -1,6 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@300;400;500;600;700&display=swap");
 
+html {
+  scroll-behavior: smooth;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -167,8 +171,9 @@ body.no-scroll {
 }
 
 .modal-close {
-  font-size: 3vh;
+  font-size: 4vh;
   background: none;
+  color: #1b1b1b;
   border: 0;
   cursor: pointer;
   margin-right: 5vw;
@@ -192,6 +197,35 @@ body.no-scroll {
   align-items: center;
   right: 0;
 }
+/* MAIN MODAL LINKS */
+.main-modal-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 1.3rem;
+  align-items: center;
+  
+  padding-top: 20vh;
+}
+
+/* link styling */
+.main-modal-nav a {
+  font-family: "Oswald", sans-serif;
+  font-size: 3vh;
+  width: 30vw;
+  padding-bottom: 1vh;
+  text-align: center;
+  border-bottom: 1px solid #1b1b1bc0;
+  letter-spacing: 1px;
+  color: #1b1b1b;
+  text-decoration: none;
+  transition: 0.25s ease;
+}
+
+.main-modal-nav a:hover {
+  color: #0a3d62;
+}
+
+
 
 /* --------------service--------------- */
 #service {
@@ -913,9 +947,14 @@ body.no-scroll {
 .contact-value {
   font-size: 1rem;
   color: #222;
+  
 }
 
 /* ----------------project ---------------- */
+
+#project-section{
+  margin-bottom: 4vh;
+}
 
 #project-card{
   width: 94vw;
@@ -996,4 +1035,115 @@ font-family: "Inika", serif;
   border-radius: 14px;
   background: linear-gradient(to right, #0a3d62, #0c4b7a);
   font-family: "Inika", serif;
+}
+
+
+/* PROJECT MODAL – slide in from LEFT */
+/* PROJECT MODAL – full width, white, small gap from top */
+.project-modal {
+  position: fixed;
+  inset: 0;
+  bottom: 0;
+  z-index: 400;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  pointer-events: none;   /* disabled until .open */
+}
+
+/* sliding panel */
+.project-modal .project-panel {
+  width: 100vw;           /* full width */
+  max-width: 100vw;
+  background: #ffffff;    /* white modal */
+  color: #000;
+          
+  height: 100vh;
+  
+  overflow-y: auto;
+  transform: translateX(-100%);
+  transition: transform 0.35s ease;
+  /* NO SHADOW */
+}
+
+/* when open, allow clicks + slide in */
+.project-modal.open {
+  pointer-events: auto;
+}
+
+.project-modal.open .project-panel {
+  transform: translateX(0);
+}
+
+.project-modal-head {
+  display: flex;
+  justify-content: flex-end;
+  padding: 0.75rem 1rem;
+}
+
+.project-modal-body {
+  padding: 1.25rem 1.5rem;
+  font-family: "Inika", serif;
+}
+
+/* PROJECT SLIDER MAIN WRAPPER */
+.project-slider {
+  width: 100%;
+  height: 80vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  margin: auto;
+}
+
+/* Slider area */
+.slider-wrapper {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.slider-track {
+  display: flex;
+  height: 100%;
+  transition: transform 0.35s ease;
+}
+
+/* IMAGES */
+.slide-img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  flex-shrink: 0;
+  border-radius: 8px;
+}
+
+/* ARROW BUTTONS */
+.slider-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0,0,0,0.45);
+  color: white;
+  border: none;
+  padding: 0.9rem 1rem;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 1.3rem;
+  z-index: 10;
+  transition: 0.25s ease;
+}
+
+.slider-btn:hover {
+  background: rgba(0,0,0,0.65);
+}
+
+.left-btn {
+  left: 12px;
+}
+
+.right-btn {
+  right: 12px;
 }
