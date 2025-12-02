@@ -89,31 +89,25 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap");
 
-#hero-logo text {
+#t {
+  margin-top: 10vh;
   font-family: "Black Han Sans", sans-serif;
-  letter-spacing: 4px;
+  color: #76563f;
+  font-size: 3.5vh;
+  color: transparent;
+  -webkit-text-stroke: 1px #76563f;
+  font-weight: 400;
+  letter-spacing: 2px;
 }
 
-#hero-logo .label {
-  font-size: 7vh;
-  stroke: #76563f;
-  stroke-width: 3;
-  fill: none;
-}
-
-#hero-logo .given {
-  font-size: 8vh;
-  fill: #76563f;
-}
-
-/* Line 1: HELLO, I'M */
-#hero-logo .line-hello {
-  transform: translateX(25vw) translateY(15px);
-}
-
-/* Line 2: SEHTAJ SINGH */
-#hero-logo .line-sehtaj {
-  transform: translateX(0px) translateY(40px);
+#t2 {
+  font-family: "Black Han Sans", sans-serif;
+  color: #76563f;
+  font-size: 4vh;
+  margin-top: 2vh;
+  letter-spacing: 2px;
+  font-weight: 400;
+  margin-bottom: 1vh;
 }
 
 .social-icons {
@@ -324,11 +318,9 @@ body.no-scroll {
   font-size: 14px;
 }
 
-
 .section-three {
-  background:
-    linear-gradient(to top, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0)),  /* gradient */
-    url("../assets/about34.png") center/cover no-repeat;   
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0)),
+    /* gradient */ url("../assets/about34.png") center/cover no-repeat;
   width: 100vw;
   aspect-ratio: 4608/2602;
   margin-top: 4vh;
@@ -336,7 +328,7 @@ body.no-scroll {
   align-items: center;
   justify-content: center;
 }
-.section-three h3{
+.section-three h3 {
   text-align: center;
   font-size: 4vh;
   color: #ffffff;
@@ -525,14 +517,14 @@ body.no-scroll {
   padding: 3vw;
   margin-bottom: 4vh;
   margin-left: 3vw;
-  overflow: hidden; 
+  overflow: hidden;
   border: 1px solid #3e3c3a81;
   box-shadow: rgba(100, 100, 111, 0.2) 1px 7px 20px 0px;
   position: relative;
 }
-  
+
 .top-section {
-  position: relative; 
+  position: relative;
   width: 100%;
   background-color: #f5f7f8;
   padding-top: 10vh;
@@ -596,7 +588,8 @@ body.no-scroll {
   align-items: center;
   max-width: 720px;
   margin: 15px 0;
-  font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial;
 }
 
 /* logo placeholder (replace with <img> inside) */
@@ -673,8 +666,7 @@ body.no-scroll {
 
   background: linear-gradient(90deg, var(--start-color), var(--end-color));
 
-  box-shadow:
-    0 4px 14px var(--shadow-color),
+  box-shadow: 0 4px 14px var(--shadow-color),
     inset 0 1px 0 rgba(255, 255, 255, 0.35);
   transition: width 150ms linear;
   will-change: width;
@@ -756,7 +748,6 @@ body.no-scroll {
   color: #7b1113d0;
 }
 
-
 /* 1. Node.js – Red (main punch color) */
 .skill-row.backend-node .skill-progress {
   --start-color: #ff4b4b;
@@ -786,18 +777,12 @@ body.no-scroll {
 }
 
 /* --------------footer--------- */
-#contact-section{
-  background: linear-gradient(
-  to bottom,
-  #fafafa 0%,
-  #f1f1f1 35%,
-  #e6e6e6 100%
-);
-padding-top: 3vh;
-
+#contact-section {
+  background: linear-gradient(to bottom, #fafafa 0%, #f1f1f1 35%, #e6e6e6 100%);
+  padding-top: 3vh;
 }
 
-.contact-title{
+.contact-title {
   width: 90vw;
   display: flex;
   padding-bottom: 2vh;
@@ -806,20 +791,18 @@ padding-top: 3vh;
   border-bottom: 1px solid #3e3c3a81;
 }
 
-.contact-title h2{
- margin-right: auto;
- font-family: "Yanone Kaffeesatz", sans-serif;
- color: #646d52;
- font-size: 4vh;
- letter-spacing: 3px;
- font-weight: 800;
+.contact-title h2 {
+  margin-right: auto;
+  font-family: "Oswald", sans-serif;
+  color: #646d52;
+  font-size: 4vh;
+  letter-spacing: 3px;
+  font-weight: 800;
 }
-
-
 
 .copyright-bar {
   width: 100%;
-  background-color: #646d52; 
+  background-color: #646d52;
   color: #ffffff;
   text-align: center;
   padding: 0.9rem 0;
@@ -851,8 +834,6 @@ padding-top: 3vh;
   transition: 0.2s ease;
 }
 
-
-
 /* Left column: icon + label (same as your screenshot) */
 .contact-left {
   display: flex;
@@ -882,3 +863,4 @@ padding-top: 3vh;
   font-size: 1rem;
   color: #222;
 }
+
