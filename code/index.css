@@ -96,7 +96,7 @@
   font-size: 3.5vh;
   color: transparent;
   -webkit-text-stroke: 1px #76563f;
-  font-weight: 400;
+  font-weight: 600;
   letter-spacing: 2px;
 }
 
@@ -493,6 +493,7 @@ body.no-scroll {
   align-items: center;
   flex-direction: column;
   gap: 2vh;
+  margin-bottom: 5vh;
 }
 
 .about-down h2 {
@@ -864,3 +865,57 @@ body.no-scroll {
   color: #222;
 }
 
+/* ----------------project ---------------- */
+
+#project-card{
+  width: 88vw;
+  border: 1px solid #3e3c3a81;
+  margin-left: 3vw;
+  padding: 3vw;
+  background-color: #f5f7f9;
+  display: flex;
+  gap:5vw;
+  border-radius: 18px;
+  position: relative;
+}
+.project-image{
+  width:35vw;
+}
+
+.project-image img{
+  width: 100%;
+  margin-top: 3vh;
+ 
+}
+#status{
+  position: absolute;
+  top: 1vw;
+  right: 3vw;
+  font-size: 1.5vh;
+  padding: 0.5vh 2vw;
+  background-color: #323a40;
+  color: #fff;
+  border-radius: 14px;
+
+}
+
+.project-data {
+margin-top: 3vh;
+width: 55vw;
+}
+
+.project-data h3{
+  color: #0a3d62;
+  font-family: "Yanone Kaffeesatz", sans-serif;
+  font-size: 3vh;
+  letter-spacing: 2px;
+  
+}
+
+.project-data p{
+font-size: 16px;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;   /* number of lines */
+  -webkit-box-orient: vertical;
+}
