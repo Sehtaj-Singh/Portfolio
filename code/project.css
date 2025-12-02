@@ -1,0 +1,81 @@
+#project-section {
+  margin-bottom: 4vh;
+}
+
+#project-card {
+  width: 94vw;
+  border: 1px solid #3e3c3a81;
+  margin-left: 3vw;
+  display: flex;
+  gap: 4vw;
+  border-radius: 18px;
+}
+
+.project-image {
+  width: 35vw;
+  background-color: #f5f7f9;
+  padding: 2vh 3vw;
+  border-bottom-left-radius: 18px;
+  border-top-left-radius: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.project-image img {
+  width: 100%;
+}
+
+.project-data {
+  width: 54vw;
+  padding: 2vh 3vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.project-data h3 {
+  color: #0a3d62;
+  font-family: "Yanone Kaffeesatz", sans-serif;
+  font-size: 3.2vh;
+  letter-spacing: 2px;
+  font-weight: 800;
+}
+
+.project-data p {
+  font-size: 14px;
+  font-family: "Inika", serif;
+  overflow: hidden;
+  display: -webkit-box;
+  line-clamp: 6;
+  -webkit-line-clamp: 6;
+  -webkit-box-orient: vertical;
+}
+
+#card-spans {
+  font-family: "Inika", serif;
+  display: flex;
+  align-items: center;
+  gap: 4vw;
+}
+
+#button {
+  text-align: center;
+  padding: 0.7vh 3vw;
+  color: #0a3d62;
+  font-size: 1.8vh;
+  letter-spacing: 1px;
+  font-family: "Inika", serif;
+  border-radius: 7px;
+  border: 1px solid #0a3d62;
+}
+
+#status {
+  letter-spacing: 1px;
+  font-size: 1.8vh;
+  padding: 0.7vh 3vw;
+  background: linear-gradient(to right, #0a3d62, #0c4b7a);
+  color: #fff;
+  border-radius: 14px;
+  font-family: "Inika", serif;
+}
