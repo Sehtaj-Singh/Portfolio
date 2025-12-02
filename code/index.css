@@ -557,9 +557,9 @@ body.no-scroll {
   top: 4vh;
   font-family: "Yanone Kaffeesatz", sans-serif;
   z-index: 5;
-  font-size: 4.5vh;
+  font-size: 4vh;
   letter-spacing: 4px;
-  left: 8vw;
+  left: 10vw;
   color: #0a3d62;
 }
 
@@ -595,7 +595,7 @@ body.no-scroll {
   gap: 12px;
   align-items: center;
   max-width: 720px;
-  margin: 12px 0;
+  margin: 15px 0;
   font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
 }
 
@@ -610,7 +610,7 @@ body.no-scroll {
 }
 
 .skill-logo img {
-  width: 10vw;
+  width: 9vw;
 }
 
 /* meta: label + progress row */
@@ -783,4 +783,102 @@ body.no-scroll {
   --start-color: #a96bff;
   --end-color: #e07bff;
   --shadow-color: rgba(169, 107, 255, 0.35);
+}
+
+/* --------------footer--------- */
+#contact-section{
+  background: linear-gradient(
+  to bottom,
+  #fafafa 0%,
+  #f1f1f1 35%,
+  #e6e6e6 100%
+);
+padding-top: 3vh;
+
+}
+
+.contact-title{
+  width: 90vw;
+  display: flex;
+  padding-bottom: 2vh;
+  margin-left: 5vw;
+  margin-bottom: 2vh;
+  border-bottom: 1px solid #3e3c3a81;
+}
+
+.contact-title h2{
+ margin-right: auto;
+ font-family: "Yanone Kaffeesatz", sans-serif;
+ color: #646d52;
+ font-size: 4vh;
+ letter-spacing: 3px;
+ font-weight: 800;
+}
+
+
+
+.copyright-bar {
+  width: 100%;
+  background-color: #646d52; 
+  color: #ffffff;
+  text-align: center;
+  padding: 0.9rem 0;
+  font-family: "Inter", sans-serif;
+  font-size: 0.95rem;
+  letter-spacing: 0.5px;
+}
+
+.copyright-bar small {
+  opacity: 0.95;
+}
+
+/* One row: icon+label on left, value on right */
+/* Make whole tile clickable */
+.contact-item {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+
+/* The real flex row */
+.contact-item-flex {
+  display: flex;
+  align-items: center;
+  gap: 5vw;
+  margin-left: 10vw;
+  margin-bottom: 2vh;
+  padding: 1vh 0;
+  transition: 0.2s ease;
+}
+
+
+
+/* Left column: icon + label (same as your screenshot) */
+.contact-left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 90px;
+}
+
+.contact-icon {
+  font-size: 1.9rem;
+  color: #646d52;
+}
+
+.contact-label {
+  margin-top: 4px;
+  font-size: 1rem;
+  color: #333;
+  font-family: "Inter", sans-serif;
+}
+
+/* Right column */
+.contact-right {
+  font-family: "Inter", sans-serif;
+}
+
+.contact-value {
+  font-size: 1rem;
+  color: #222;
 }

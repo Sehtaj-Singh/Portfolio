@@ -212,7 +212,7 @@
              C 1.000095 -0.015220  0.997731 0.060408  1.000095 0.110040
              L 1.002694 0.869044
              C 1.002694 0.943491  1.006239 0.991350  0.912294 0.998440
-             L 0.111103 1.005530
+             L 0.181103 1.005530
              C 0.027793 1.012620  -0.004112 0.977170  -0.004112 0.884997
              Z
              " fill="black" />
@@ -310,9 +310,6 @@
 
         <div class="bottom-section">
 
-
-
-
           <!-- optional extra content -->
         </div>
       </div>
@@ -322,14 +319,12 @@
       <div class="ui-card ">
         <h3 id="border">BACKEND</h3>
 
-
-
         <div class="top-section">
 
           <div class="logos">
             <!-- you can change these logos as you like -->
             <img src="assets/server.png" alt="Logo 1">
-            <img src="assets/api.png" alt="Logo 2">
+            <img src="assets/sql.png" alt="Logo 2">
           </div>
 
           <!-- subtitle line, like frontend -->
@@ -355,7 +350,9 @@
 
           <!-- Express.js -->
           <div class="skill-row backend-express" data-target="78">
-            <div class="skill-logo"></div>
+            <div class="skill-logo">
+              <img src="assets/Express.png" alt="Node.js logo">
+            </div>
             <div class="skill-meta">
               <div class="skill-name">Express.js</div>
               <div class="skill-progress-wrapper">
@@ -386,7 +383,9 @@
 
           <!-- REST APIs -->
           <div class="skill-row backend-api" data-target="70">
-            <div class="skill-logo"></div>
+            <div class="skill-logo">
+              <img src="assets/api.png" alt="Node.js logo">
+            </div>
             <div class="skill-meta">
               <div class="skill-name">REST APIs</div>
               <div class="skill-progress-wrapper">
@@ -406,6 +405,79 @@
 
     </div>
   </section>
+
+  <section id="contact-section">
+
+  <div class="contact-title">
+    <h2>CONTACT</h2>
+  </div>
+
+  <!-- WhatsApp -->
+  <a class="contact-item" href="https://wa.me/911234567890" target="_blank">
+    <div class="contact-item-flex">
+      <div class="contact-left">
+        <i class="fa-brands fa-whatsapp contact-icon"></i>
+        <span class="contact-label">WhatsApp</span>
+      </div>
+      <div class="contact-right">
+        <span class="contact-value">+91 99927 15254</span>
+      </div>
+    </div>
+  </a>
+
+  <!-- Facebook -->
+  <a class="contact-item" href="#" target="_blank">
+    <div class="contact-item-flex">
+      <div class="contact-left">
+        <i class="fa-brands fa-facebook contact-icon"></i>
+        <span class="contact-label">Facebook</span>
+      </div>
+      <div class="contact-right">
+        <span class="contact-value">/yourprofile</span>
+      </div>
+    </div>
+  </a>
+
+  <!-- Instagram -->
+  <a class="contact-item" href="#" target="_blank">
+    <div class="contact-item-flex">
+      <div class="contact-left">
+        <i class="fa-brands fa-instagram contact-icon"></i>
+        <span class="contact-label">Instagram</span>
+      </div>
+      <div class="contact-right">
+        <span class="contact-value">@yourprofile</span>
+      </div>
+    </div>
+  </a>
+
+  <!-- LinkedIn -->
+  <a class="contact-item" href="#" target="_blank">
+    <div class="contact-item-flex">
+      <div class="contact-left">
+        <i class="fa-brands fa-linkedin contact-icon"></i>
+        <span class="contact-label">LinkedIn</span>
+      </div>
+      <div class="contact-right">
+        <span class="contact-value">linkedin.com/in/yourprofile</span>
+      </div>
+    </div>
+  </a>
+
+  <div class="copyright-bar">
+    <small>© <span id="copy-year"></span> Sehtaj Singh — All rights reserved.</small>
+  </div>
+
+</section>
+
+<script>
+  document.getElementById("copy-year").textContent = new Date().getFullYear();
+</script>
+
+
+
+
+
 
   <aside id="sideModal" class="side-modal" role="dialog" aria-modal="true" aria-hidden="true" aria-label="Main menu">
     <header id="modal-head">
