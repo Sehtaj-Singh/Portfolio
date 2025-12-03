@@ -262,3 +262,79 @@
   --end-color: #e07bff;
   --shadow-color: rgba(169, 107, 255, 0.35);
 }
+
+/* Tablet */
+@media (min-width: 768px) and (max-width: 1279px) {
+.ui-card{
+  width: 84vw;
+   margin-left: 5vw;
+}
+.top-section .logos img {
+  width: 6vw;
+}
+.top-section h3{
+  font-size: 2.4vh;
+  width: 70%;
+  margin-left: 15%
+}
+.skill-row{
+  gap: 32px;
+  padding-left: 6vw;
+  margin: 30px 0;
+  padding-right: 6vw;
+}
+.skill-logo img {
+  width: 5vw;
+}
+.skill-progress-wrapper{
+  gap: 5vw;
+}
+.skill-name{
+  font-size: 20px;
+}
+.skill-percent{
+  font-size: 20px;
+}
+.work-item img{
+  width: 5vw;
+}
+
+}
+
+/* Laptop / Desktop */
+@media (min-width: 1280px) {
+ #skill-row-desk{
+  display: flex;
+ }
+ .top-section .logos img {
+  width: 3vw;
+}
+.skill-logo img {
+  width: 3vw;
+}
+.logos {
+  right: 5vw;
+  display: flex;
+  gap: 3vw;
+}
+
+#border{
+  top: 9vh;
+  font-size: 5vh;
+  left: 6vw;
+}
+.work-item img{
+  width: 3vw;
+}
+.skill-row{
+   gap: 32px;
+  margin: 30px 0;
+}
+.skill-progress-wrapper{
+  gap: 2vw;
+}
+.top-section{
+  padding-top: 12vh;
+}
+
+}

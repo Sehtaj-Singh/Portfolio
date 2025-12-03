@@ -79,3 +79,43 @@
 .copyright-bar small {
   opacity: 0.95;
 }
+
+/* Tablet */
+@media (min-width: 768px) and (max-width: 1279px) {
+  .contact-icon {
+    font-size: 2.7rem;
+  }
+  .contact-label {
+    font-size: 1.3rem;
+    margin-top: 8px;
+  }
+  .contact-value {
+    font-size: 1.5rem;
+  }
+  .contact-item-flex {
+    gap: 7vw;
+  }
+  .copyright-bar {
+    font-size: 1.5rem;
+  }
+}
+
+/* Laptop / Desktop */
+@media (min-width: 1280px) {
+  .contact-icon {
+    font-size: 2.7rem;
+  }
+  .contact-label {
+    font-size: 1.3rem;
+    margin-top: 8px;
+  }
+  .contact-value {
+    font-size: 1.5rem;
+  }
+  .contact-item-flex {
+    gap: 7vw;
+  }
+  .copyright-bar {
+    font-size: 1.5rem;
+  }
+}

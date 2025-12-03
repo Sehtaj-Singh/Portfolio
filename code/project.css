@@ -79,3 +79,61 @@
   border-radius: 14px;
   font-family: "Inika", serif;
 }
+
+/* Tablet */
+@media (min-width: 768px) and (max-width: 1279px) {
+  .project-image {
+    padding: 2.5vh 4vw;
+  }
+  .project-data {
+    padding: 2.5vh 4vw;
+  }
+  .project-data h3 {
+    font-size: 4.5vh;
+  }
+  .project-data p {
+    font-size: 23px;
+    width: 90%;
+    line-clamp: 10;
+    -webkit-line-clamp: 10;
+  }
+  #card-spans {
+    gap: 6vw;
+  }
+}
+
+/* Laptop / Desktop */
+@media (min-width: 1280px) {
+  .project-image {
+    padding: 2.5vh 4vw;
+  }
+  .project-data {
+    padding:4vh 4vw;
+  }
+  .project-data h3 {
+    font-size: 7vh;
+  }
+  .project-data p {
+    font-size: 23px;
+    width: 90%;
+    line-clamp: 10;
+    -webkit-line-clamp: 10;
+  }
+  #card-spans {
+    gap: 10vw;
+  }
+  .project-image img{
+    height: 45vh;
+    object-fit: cover;
+    object-position: top;
+  }
+  .project-image{
+    height: 45vh;
+  }
+  #project-card {
+    width: 88vw;
+    margin-left: 6vw;
+  }
+}
+
+

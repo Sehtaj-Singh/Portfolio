@@ -48,7 +48,6 @@
 
 #about-go {
   display: block;
-  width: 20vw;
   font-size: 1.6vh;
   text-align: center;
   font-family: "Inter", sans-serif;
@@ -102,7 +101,7 @@
 }
 
 .about-pro-para {
-  width: 50vw;
+  width: 45vw;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -110,13 +109,11 @@
 
 .about-pro-para p {
   font-size: 13px;
-  width: 45vw;
+  text-align: left;
   font-family: "Inika", serif;
 }
 
 #about-go-para {
-  display: block;
-  width: 20vw;
   font-size: 1.5vh;
   text-align: center;
   font-family: "Inter", sans-serif;
@@ -170,7 +167,7 @@
 
 #one-A {
   background: url("../assets/about18.png") center/cover no-repeat;
-  width: 55vw;
+  width: 52vw;
   aspect-ratio: 3006/3007;
 }
 
@@ -182,23 +179,33 @@
 
 #one-B {
   background: url("../assets/about27.png") center/cover no-repeat;
-  width: 55vw;
+  width: 52vw;
   aspect-ratio: 3006/3007;
 }
 
 .A-para,
 .B-para {
-  width: 50vw;
+  width:48vw;
 }
 
-.A-para h3,
+
 .B-para h3 {
+  font-family: "Yanone Kaffeesatz", sans-serif;
+  font-size: 3.5vh;
+  text-align: center;
+  margin-left: 5vw;
+  letter-spacing: 1px;
+  margin-top: 1vh;
+  margin-bottom: 1.5vh;
+  color: #4c4742;
+}
+.A-para h3{
   font-family: "Yanone Kaffeesatz", sans-serif;
   font-size: 3.5vh;
   text-align: center;
   margin-right: 5vw;
   letter-spacing: 1px;
-  margin-top: 4vh;
+  margin-top: 1vh;
   margin-bottom: 1.5vh;
   color: #4c4742;
 }
@@ -208,7 +215,7 @@
   font-family: "Inika", serif;
   width: 45vw;
   margin-right: 2.5vw;
-  font-size: 14px;
+  font-size: 13px;
 }
 
 .B-para p {
@@ -216,7 +223,7 @@
   font-family: "Inika", serif;
   width: 43vw;
   margin-left: 2.5vw;
-  font-size: 14px;
+  font-size: 13px;
 }
 
 .section-three {
@@ -236,4 +243,176 @@
   color: #ffffff;
   font-family: "Yanone Kaffeesatz", sans-serif;
   letter-spacing: 3px;
+}
+
+/* Tablet */
+@media (min-width: 768px) and (max-width: 1279px) {
+#type-line1{
+  font-size: 2.8rem;
+  line-height: 1.2;
+}
+.roles-block{
+   height: 2.8rem;
+}
+#about-go{
+  font-size: 2vh;
+}
+.about-pro-tag h3,
+.about-pro-tag h2{
+  font-size: 5vh;
+}
+.about-pro-tag h1{
+  font-size: 7vh;
+}
+.about-pro-para{
+  width: 30vw;
+}
+.about-pro-para p{
+  font-size: 24px;
+  width: 40vw;
+}
+#about-go-para{
+  font-size: 2vh;
+  padding: 0.7vh 0.5vw;
+}
+
+.about-down h2 {
+  font-size: 3vh;
+}
+.A-para h3,
+.B-para h3{
+   font-size: 4.5vh;
+   margin-top: 5vh;
+}
+.A-para p{
+  font-size: 24px;
+  width: 40vw;
+  margin-left: 2vw;
+  margin-top: 2vh;
+}
+.B-para p{
+   font-size: 24px;
+   width: 40vw;
+   margin-top: 2vh;
+}
+.section-three h3{
+  font-size: 5vh;
+}
+
+}
+
+
+/* Laptop / Desktop */
+@media (min-width: 1280px) {
+.roles-block{
+   height: 2.8rem;
+}
+#type-line1{
+  font-size: 2.8rem;
+  margin-left: 10%;
+  line-height: 1.2;
+  letter-spacing: 3px;
+}
+.front-left img {
+  width: 80%;
+  margin-left: 10%;
+  margin-top: 1vh;
+}
+.front-right img {
+  width: 80%;
+  margin-left: 10%;
+}
+#about-go{
+margin-left: 10%;
+font-size: 2.5vh;
+}
+.about-pro{
+  display: flex;
+  margin-bottom: 8vh;
+}
+#about-back{
+  height: 40vh;
+  margin-top: -27vh;
+}
+.about-pro-tag{
+  width: 30vw;
+}
+#about-max{
+   gap: 2vw;
+}
+.about-pro-para{
+  width: 20vw;
+}
+.about-down{
+  border-top: none;
+  padding: 2vh 0;
+  border-left: 1px solid #4c4742;;
+}
+.about-pro-tag h3,
+.about-pro-tag h2{
+  font-size: 5vh;
+}
+.about-pro-tag h1{
+  font-size: 7vh;
+}
+#about-go-para{
+  width: 4vw;
+  margin-bottom: 11vh;
+}
+.about-down{
+  margin-left: 5vw;
+}
+.about-pro-para p{
+  font-size: 18px;
+}
+.about-down h2{
+  font-size: 3vh;
+  width: 70%;
+}
+#one-A{
+  width: 42vw;
+  margin-left: 5vw;
+  margin-right: 5vw;
+}
+#one-B {
+  width: 42vw;
+  margin-left: 5vw;
+  margin-right: 5vw;
+}
+.B-para h3{
+  font-size: 8vh;
+}
+.A-para h3{
+  font-size: 8vh;
+}
+.A-para p{
+  width: 35vw;
+  font-size: 22px;
+  margin-top: 4vh;
+}
+.B-para p{
+  width: 35vw;
+  font-size: 22px;
+  margin-top: 4vh;
+}
+.A-para{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.B-para{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.section-three{
+    width: 90vw;
+    margin-left: 5vw;
+}
+.section-three h3{
+  font-size: 8vh;
+}
+
 }
