@@ -119,3 +119,23 @@
     font-size: 1.5rem;
   }
 }
+
+/* TABLET LANDSCAPE */
+@media (min-width: 768px) and (max-width: 1365px) and (orientation: landscape) {
+  .contact-icon {
+    font-size: 3rem;
+  }
+  .contact-label {
+    font-size: 1.5rem;
+    margin-top: 8px;
+  }
+  .contact-value {
+    font-size: 1.5rem;
+  }
+  .contact-item-flex {
+    gap: 7vw;
+  }
+  .copyright-bar {
+    font-size: 1.5rem;
+  }
+}

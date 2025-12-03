@@ -338,3 +338,48 @@
 }
 
 }
+
+/* MOBILE LANDSCAPE */
+@media (max-width: 899px) and (orientation: landscape) {
+  #border{
+    font-size: 15vh;
+    top: 6vh;
+  }
+  .top-section{
+    padding-top: 30vh;
+  }
+}
+
+
+/* TABLET LANDSCAPE */
+@media (min-width: 768px) and (max-width: 1365px) and (orientation: landscape) {
+  /* tablet landscape layout (almost desktop) */
+}
+
+
+/* TABLET LANDSCAPE */
+@media (min-width: 768px) and (max-width: 1365px) and (orientation: landscape) {
+ #border {
+  font-size: 8vh;
+  top: 6vh;
+ }
+ .top-section{
+  padding-top: 20vh;
+ }
+ .top-section h3{
+  font-size: 4vh;
+ }
+ .skill-row {
+  padding-left: 10vw;
+  padding-right: 4vw;
+  margin: 35px 0;
+ }
+ .skill-name {
+  font-size: 28px;
+ }
+ .skill-percent{
+  font-size: 28px;
+ }
+}
+
+

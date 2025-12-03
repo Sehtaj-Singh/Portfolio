@@ -92,7 +92,7 @@
     font-size: 4.5vh;
   }
   .project-data p {
-    font-size: 23px;
+    font-size: 3vw;
     width: 90%;
     line-clamp: 10;
     -webkit-line-clamp: 10;
@@ -100,6 +100,14 @@
   #card-spans {
     gap: 6vw;
   }
+  #button {
+  padding: 1vh 3vw;
+  font-size: 2vh;
+ }
+ #status{
+  padding: 1vh 3vw;
+  font-size: 2vh;
+ }
 }
 
 /* Laptop / Desktop */
@@ -137,3 +145,24 @@
 }
 
 
+
+/* TABLET LANDSCAPE */
+@media (min-width: 768px) and (max-width: 1365px) and (orientation: landscape) {
+ .project-data h3{
+  font-size: 8vh;
+ }
+ #button {
+  padding: 2vh 3vw;
+  font-size: 3vh;
+ }
+ #status{
+  padding: 2vh 3vw;
+  font-size: 3vh;
+ }
+ .project-data{
+  padding: 5vh 3vw;
+ }
+ .project-image{
+  padding: 5vh 3vw;
+ }
+}

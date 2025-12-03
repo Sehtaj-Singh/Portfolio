@@ -115,6 +115,7 @@
 
 #about-go-para {
   font-size: 1.5vh;
+  
   text-align: center;
   font-family: "Inter", sans-serif;
   text-decoration: none;
@@ -415,4 +416,86 @@ font-size: 2.5vh;
   font-size: 8vh;
 }
 
+}
+
+/* MOBILE LANDSCAPE */
+@media (max-width: 899px) and (orientation: landscape) {
+  .about-pro-tag h3,
+.about-pro-tag h2{
+   font-size: 9vh;
+}
+.about-pro-tag h1{
+   font-size: 10vh;
+}
+.B-para h3{
+  font-size: 10vh;
+}
+.A-para h3{
+  font-size: 10vh;
+}
+}
+
+
+/* TABLET LANDSCAPE */
+@media (min-width: 768px) and (max-width: 1365px) and (orientation: landscape) {
+  #type-line1{
+    font-size: 3.5rem;
+  }
+  .roles-block{
+    height: 3.5rem;
+  }
+  #about-go{
+    font-size: 3.5vh;
+  }
+  .about-pro-tag h3,
+.about-pro-tag h2{
+  font-size: 7vh;
+}
+.about-pro-tag h1{
+  font-size: 9vh;
+}
+#about-max{
+   margin-top: 10vh;
+}
+#about-back{
+    height:40vh;
+    margin-top: -27vh;
+}
+.about-down h2{
+  font-size: 5vh;
+}
+.about-down i{
+  font-size: 5vh;
+}
+#one-A{
+  width: 44vw;
+  margin-left: 4vw;
+}
+#one-B{
+  width: 44vw;
+  margin-left: 4vw;
+}
+.B-para h3{
+  font-size: 9vh;
+  margin-top: 10vh;
+}
+.A-para h3{
+  font-size: 9vh;
+  margin-top: 10vh;
+}
+.A-para p{
+  font-size: 30px;
+  margin-top: 5vh;
+}
+.B-para p{
+  font-size: 30px;
+  margin-top: 5vh;
+}
+.section-three{
+   width: 90vw;
+   margin-left: 5vw;
+}
+.section-three h3{
+  font-size: 9vh;
+}
 }

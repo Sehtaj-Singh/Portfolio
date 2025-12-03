@@ -197,3 +197,53 @@
    margin-top: 4vh;
 }
 }
+
+/* MOBILE LANDSCAPE */
+@media (max-width: 899px) and (orientation: landscape) {
+ .hero img {
+  margin-bottom: -7vh;
+  width: 10vw;
+  
+}
+}
+
+
+/* TABLET LANDSCAPE */
+@media (min-width: 768px) and (max-width: 1365px) and (orientation: landscape) {
+.intro{
+  display: flex;
+  gap: 10vw;
+}
+.hero {
+  width: 35vw;
+  height: 70vh;
+}
+
+#info {
+  width: 55vw;
+}
+#para{
+  width: 35vw;
+}
+.hero img{
+  width: 25vw;
+  margin-left: 29vw;
+  margin-top: 13vh;
+}
+#t{
+  margin-top: 15vh;
+   font-size: 5vh;
+}
+#t2{
+  font-size: 7vh;
+}
+.social-icons{
+  font-size: 40px;
+}
+#go{
+   padding: 0.5vh 1vw;
+   width: 5vw;
+   margin-top: 4vh;
+}
+}
+
