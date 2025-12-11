@@ -194,9 +194,9 @@
   font-family: "Yanone Kaffeesatz", sans-serif;
   font-size: 3.5vh;
   text-align: center;
-  margin-left: 5vw;
+  
   letter-spacing: 1px;
-  margin-top: 1vh;
+  margin-top: 4vh;
   margin-bottom: 1.5vh;
   color: #4c4742;
 }
@@ -206,7 +206,7 @@
   text-align: center;
   margin-right: 5vw;
   letter-spacing: 1px;
-  margin-top: 1vh;
+  margin-top: 3vh;
   margin-bottom: 1.5vh;
   color: #4c4742;
 }
