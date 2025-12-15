@@ -167,7 +167,7 @@
 }
 
 #one-A {
-  background: url("../assets/about18.png") center/cover no-repeat;
+  background: url("../assets/about18.webp") center/cover no-repeat;
   width: 52vw;
   aspect-ratio: 3006/3007;
 }
@@ -179,7 +179,7 @@
 }
 
 #one-B {
-  background: url("../assets/about27.png") center/cover no-repeat;
+  background: url("../assets/about27.webp") center/cover no-repeat;
   width: 52vw;
   aspect-ratio: 3006/3007;
 }
@@ -229,7 +229,7 @@
 
 .section-three {
   background: linear-gradient(to top, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0)),
-    url("../assets/about34.png") center/cover no-repeat;
+    url("../assets/about34.webp") center/cover no-repeat;
   width: 100vw;
   aspect-ratio: 4608/2602;
   margin-top: 4vh;
