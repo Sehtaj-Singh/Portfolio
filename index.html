@@ -17,11 +17,12 @@
   <!-- CSS (order matters) -->
   <link rel="stylesheet" href="code/base.css">
   <link rel="stylesheet" href="code/hero.css">
-  <link rel="stylesheet" href="code/about.css">
-  <link rel="stylesheet" href="code/skill.css">
-  <link rel="stylesheet" href="code/project.css">
-  <link rel="stylesheet" href="code/footer.css">
-  <link rel="stylesheet" href="code/modal.css">
+  <link rel="stylesheet" href="code/about.css" media="print" onload="this.media='all'">
+  <link rel="stylesheet" href="code/skill.css" media="print" onload="this.media='all'">
+  <link rel="stylesheet" href="code/project.css" media="print" onload="this.media='all'">
+  <link rel="stylesheet" href="code/footer.css" media="print" onload="this.media='all'">
+  <link rel="stylesheet" href="code/modal.css" media="print" onload="this.media='all'">
+
 
   <!-- Font Awesome (self-hosted) -->
   <link rel="stylesheet" href="icons/css/solid.min.css">
@@ -37,7 +38,7 @@
   <header class="head">
     <h1>Portfolio</h1>
     <button class="menu-btn" aria-label="Open menu" aria-expanded="false" aria-controls="sideModal">
-      <i class="fa-solid fa-bars"></i>
+      <i class="fa-solid fa-bars" aria-hidden="true"></i>
     </button>
   </header>
 
@@ -45,7 +46,7 @@
     <section class="intro">
 
       <section class="hero" aria-label="Hero">
-        <img src="assets/test16.webp" alt="Hero Illustration">
+        <img src="assets/test16.webp" alt="Hero Illustration" fetchpriority="high" decoding="async">
       </section>
 
       <section id="info" aria-label="Intro text and social links">
@@ -60,19 +61,19 @@
 
         <div class="social-icons">
           <a href="https://wa.me/919992715254" target="_blank" aria-label="WhatsApp">
-            <i class="fa-brands fa-whatsapp"></i>
+            <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
           </a>
 
           <a href="https://www.facebook.com/SehtajM49" target="_blank" aria-label="Facebook">
-            <i class="fa-brands fa-facebook-f"></i>
+            <i class="fa-brands fa-facebook-f" aria-hidden="true"></i>
           </a>
 
           <a href="https://www.instagram.com/sehtaj_m49/" target="_blank" aria-label="Instagram">
-            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-instagram" aria-hidden="true"></i>
           </a>
 
           <a href="https://www.linkedin.com/in/sehtaj-singh-493457380" target="_blank" aria-label="LinkedIn">
-            <i class="fa-brands fa-linkedin"></i>
+            <i class="fa-brands fa-linkedin" aria-hidden="true"></i>
           </a>
         </div>
 
@@ -94,11 +95,11 @@
           <div class="roles-block">
             <span id="type-line1"></span>
           </div>
-          <img src="assets/above4.webp" alt="About left">
+          <img src="assets/above4.webp" alt="About left" loading="lazy" decoding="async">
         </div>
 
         <div class="front-right">
-          <img src="assets/above5.webp" alt="About right">
+          <img src="assets/above5.webp" alt="About right" loading="lazy" decoding="async">
           <a id="about-go" href="#skills">Skills</a>
         </div>
       </div>
@@ -121,7 +122,7 @@
 
         <div class="about-down">
           <h2>Focused on building clear, reliable, and well-structured digital experiences.</h2>
-          <i class="fa-solid fa-arrow-down"></i>
+          <i class="fa-solid fa-arrow-down" aria-hidden="true"></i>
         </div>
       </div>
     </section>
@@ -183,15 +184,15 @@
 
           <div class="top-section">
             <div class="logos">
-              <img src="assets/logo.webp" alt="Logo 1">
-              <img src="assets/logo2.webp" alt="Logo 2">
+              <img src="assets/logo.webp" alt="Logo 1" loading="lazy" decoding="async">
+              <img src="assets/logo2.webp" alt="Logo 2" loading="lazy" decoding="async">
             </div>
 
             <h3>Crafting modern layouts with clean structure and smooth interaction.</h3>
 
             <div class="skill-row html-skill" data-target="88">
               <div class="skill-logo" aria-hidden="true">
-                <img src="assets/html.webp" alt="HTML logo">
+                <img src="assets/html.webp" alt="HTML logo" loading="lazy" decoding="async">
               </div>
               <div class="skill-meta">
                 <div class="skill-name">HTML</div>
@@ -207,7 +208,7 @@
 
             <div class="skill-row css-skill" data-target="76">
               <div class="skill-logo" aria-hidden="true">
-                <img src="assets/text.webp" alt="CSS logo">
+                <img src="assets/text.webp" alt="CSS logo" loading="lazy" decoding="async">
               </div>
               <div class="skill-meta">
                 <div class="skill-name">CSS</div>
@@ -223,7 +224,7 @@
 
             <div class="skill-row js-skill" data-target="72">
               <div class="skill-logo" aria-hidden="true">
-                <img src="assets/js.webp" alt="JavaScript logo">
+                <img src="assets/js.webp" alt="JavaScript logo" loading="lazy" decoding="async">
               </div>
               <div class="skill-meta">
                 <div class="skill-name">JavaScript</div>
@@ -239,7 +240,7 @@
 
             <div class="skill-row react-skill" data-target="65">
               <div class="skill-logo" aria-hidden="true">
-                <img src="assets/programing.webp" alt="React logo">
+                <img src="assets/programing.webp" alt="React logo" loading="lazy" decoding="async">
               </div>
               <div class="skill-meta">
                 <div class="skill-name">React</div>
@@ -261,18 +262,18 @@
 
             <div class="go-work">
               <a class="work-item" href="#" target="_blank" rel="noopener noreferrer" aria-label="Fiverr profile">
-                <img src="assets/fiverr.webp" alt="Fiverr Logo">
+                <img src="assets/fiverr.webp" alt="Fiverr Logo" loading="lazy" decoding="async">
                 <span>Fiverr</span>
               </a>
 
               <a class="work-item" href="#" target="_blank" rel="noopener noreferrer" aria-label="Upwork profile">
-                <img src="assets/upwork.webp" alt="Upwork Logo">
+                <img src="assets/upwork.webp" alt="Upwork Logo" loading="lazy" decoding="async">
                 <span>Upwork</span>
               </a>
 
               <a class="work-item" href="#" target="_blank" rel="noopener noreferrer"
                 aria-label="Freelancer.com profile">
-                <img src="assets/freelancer.webp" alt="Freelancer Logo">
+                <img src="assets/freelancer.webp" alt="Freelancer Logo" loading="lazy" decoding="async">
                 <span>Freelancer</span>
               </a>
             </div>
@@ -284,15 +285,15 @@
 
           <div class="top-section">
             <div class="logos">
-              <img src="assets/server.webp" alt="Server Logo">
-              <img src="assets/sql.webp" alt="Database Logo">
+              <img src="assets/server.webp" alt="Server Logo" loading="lazy" decoding="async">
+              <img src="assets/sql.webp" alt="Database Logo" loading="lazy" decoding="async">
             </div>
 
             <h3>Shaping secure logic with clean APIs for stable, dependable performance</h3>
 
             <div class="skill-row backend-node" data-target="82">
               <div class="skill-logo">
-                <img src="assets/nodejs.webp" alt="Node.js logo">
+                <img src="assets/nodejs.webp" alt="Node.js logo" loading="lazy" decoding="async">
               </div>
               <div class="skill-meta">
                 <div class="skill-name">Node.js</div>
@@ -308,7 +309,7 @@
 
             <div class="skill-row backend-express" data-target="78">
               <div class="skill-logo">
-                <img src="assets/Express.webp" alt="Express.js logo">
+                <img src="assets/Express.webp" alt="Express.js logo" loading="lazy" decoding="async">
               </div>
               <div class="skill-meta">
                 <div class="skill-name">Express.js</div>
@@ -321,7 +322,7 @@
 
             <div class="skill-row backend-mongo" data-target="76">
               <div class="skill-logo">
-                <img src="assets/mongo.webp" alt="MongoDB logo">
+                <img src="assets/mongo.webp" alt="MongoDB logo" loading="lazy" decoding="async">
               </div>
               <div class="skill-meta">
                 <div class="skill-name">MongoDB</div>
@@ -337,7 +338,7 @@
 
             <div class="skill-row backend-api" data-target="70">
               <div class="skill-logo">
-                <img src="assets/api.webp" alt="REST API logo">
+                <img src="assets/api.webp" alt="REST API logo" loading="lazy" decoding="async">
               </div>
               <div class="skill-meta">
                 <div class="skill-name">REST APIs</div>
@@ -356,18 +357,18 @@
 
             <div class="go-work">
               <a class="work-item" href="#" target="_blank" rel="noopener noreferrer" aria-label="Fiverr profile">
-                <img src="assets/fiverr.webp" alt="Fiverr Logo">
+                <img src="assets/fiverr.webp" alt="Fiverr Logo" loading="lazy" decoding="async">
                 <span>Fiverr</span>
               </a>
 
               <a class="work-item" href="#" target="_blank" rel="noopener noreferrer" aria-label="Upwork profile">
-                <img src="assets/upwork.webp" alt="Upwork Logo">
+                <img src="assets/upwork.webp" alt="Upwork Logo" loading="lazy" decoding="async">
                 <span>Upwork</span>
               </a>
 
               <a class="work-item" href="#" target="_blank" rel="noopener noreferrer"
                 aria-label="Freelancer.com profile">
-                <img src="assets/freelancer.webp" alt="Freelancer Logo">
+                <img src="assets/freelancer.webp" alt="Freelancer Logo" loading="lazy" decoding="async">
                 <span>Freelancer</span>
               </a>
             </div>
@@ -388,7 +389,7 @@
       <div id="projects-list">
         <a id="project-card">
           <div class="project-image">
-            <img src="assets/P1.webp" alt="Harish Mobile project screenshot">
+            <img src="assets/P1.webp" alt="Harish Mobile project screenshot" loading="lazy" decoding="async">
           </div>
 
           <div class="project-data">
@@ -416,7 +417,7 @@
     <a class="contact-item" href="https://wa.me/919992715254" target="_blank">
       <div class="contact-item-flex">
         <div class="contact-left">
-          <i class="fa-brands fa-whatsapp contact-icon"></i>
+          <i class="fa-brands fa-whatsapp contact-icon" aria-hidden="true"></i>
           <span class="contact-label">WhatsApp</span>
         </div>
         <div class="contact-right">
@@ -428,7 +429,7 @@
     <a class="contact-item" href="https://www.facebook.com/SehtajM49" target="_blank">
       <div class="contact-item-flex">
         <div class="contact-left">
-          <i class="fa-brands fa-facebook contact-icon"></i>
+          <i class="fa-brands fa-facebook contact-icon" aria-hidden="true"></i>
           <span class="contact-label">Facebook</span>
         </div>
         <div class="contact-right">
@@ -440,7 +441,7 @@
     <a class="contact-item" href="https://www.instagram.com/sehtaj_m49/" target="_blank">
       <div class="contact-item-flex">
         <div class="contact-left">
-          <i class="fa-brands fa-instagram contact-icon"></i>
+          <i class="fa-brands fa-instagram contact-icon" aria-hidden="true"></i>
           <span class="contact-label">Instagram</span>
         </div>
         <div class="contact-right">
@@ -452,7 +453,7 @@
     <a class="contact-item" href="https://www.linkedin.com/in/sehtaj-singh-493457380" target="_blank">
       <div class="contact-item-flex">
         <div class="contact-left">
-          <i class="fa-brands fa-linkedin contact-icon"></i>
+          <i class="fa-brands fa-linkedin contact-icon" aria-hidden="true"></i>
           <span class="contact-label">LinkedIn</span>
         </div>
         <div class="contact-right">
@@ -491,19 +492,19 @@
       <div class="project-modal-body">
         <div class="project-slider">
           <button class="slider-btn left-btn">
-            <i class="fa-solid fa-chevron-left"></i>
+            <i class="fa-solid fa-chevron-left" aria-hidden="true"></i>
           </button>
 
           <div class="slider-wrapper">
             <div class="slider-track">
-              <img src="assets/P1-1.webp" class="slide-img" alt="Project screenshot 1">
-              <img src="assets/P1-2.webp" class="slide-img" alt="Project screenshot 2">
-              <img src="assets/P1-3.webp" class="slide-img" alt="Project screenshot 3">
+              <img src="assets/P1-1.webp" class="slide-img" alt="Project screenshot 1" loading="lazy" decoding="async">
+              <img src="assets/P1-2.webp" class="slide-img" alt="Project screenshot 2" loading="lazy" decoding="async">
+              <img src="assets/P1-3.webp" class="slide-img" alt="Project screenshot 3" loading="lazy" decoding="async">
             </div>
           </div>
 
           <button class="slider-btn right-btn">
-            <i class="fa-solid fa-chevron-right"></i>
+            <i class="fa-solid fa-chevron-right" aria-hidden="true"></i>
           </button>
         </div>
       </div>
